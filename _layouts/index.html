@@ -11,7 +11,7 @@ layout: default
       {% for item in page.services %}
       <div class="span3 hs_post">
         <div class="span12 hs_service_thumb text-center"> <img src="{{ item.image }}" alt="computer_icon"/> </div>
-        <div class="span12 hs_services_title text-center"> <a href="{{ item.link }}"> {{ item.text }} </a> </div>
+        <div class="span12 hs_services_title text-center"> <a href="#" class="filter" data-filter=".{{ item.tag }}"> {{ item.text }} </a> </div>
       </div>
       {% endfor %}
     </div>
@@ -23,15 +23,17 @@ layout: default
     <h1 class="lined">&nbsp;</h1>
   </div>
   <div class="span12">
-    {% for item in page.categories %}
-    <div class="span4 hs_main_latest"> <a href="{{ item.link }}">
-        <div class="span12 hs_port_thumb">
-          <div class="span12 hs_latest"> <img src="{{ item.image }}" alt="{{ item.text }}"/> </div>
-        </div>
-      </a>
-      <div class="span12 text-center"><a href="{{ item.link }}">{{ item.text }}</a> </div>
+    <div id="portfoliolist">
+      {% for item in page.categories %}
+      <div class="span4 hs_main_latest portfolio {{ item.tags }}"> <a href="{{ item.link }}">
+          <div class="span12 hs_port_thumb">
+            <div class="span12 hs_latest"> <img src="{{ item.image }}" alt="{{ item.text }}"/> </div>
+          </div>
+        </a>
+        <div class="span12 text-center"><a href="{{ item.link }}">{{ item.text }}</a> </div>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 </div>
 

@@ -15,51 +15,63 @@ services:
   - text: Офсетная печать
     link: #
     image: images/computer_icon.png
+    tag: offset
 
   - text: Сувенирная печать
     link: #
     image: images/mob_icon.png
+    tag: souvenir
 
   - text: Широко- форматная печать
     link: #
     image: images/paint_icon.png
+    tag: large
 
   - text: Наружная реклама
     link: #
     image: images/globe_icon.png
+    tag: outdoor
 
 categories:
   - text: Визитки
     link: cards.html
     image: images/latest_art_1.png
+    tags: offset
 
   - text: Флаера
     link: flyers.html
     image: images/latest_art_2.png
+    tags: souvenir
 
   - text: Бланки
     link: forms.html
     image: images/latest_art_3.png
+    tags: large
 
   - text: Плакаты
     link: posters.html
     image: images/latest_art_4.png
+    tags: souvenir
 
   - text: Буклеты
     link: booklets.html
     image: images/latest_art_5.png
+    tags: large
 
   - text: Брошуры
     link: brochures.html
     image: images/latest_art_6.png
+    tags: large
 
   - text: Пригласительные
     link: invitations.html
     image: images/latest_art_1.png
+    tags: offset large
 
   - text: Календари
     link: calendars.html
     image: images/latest_art_2.png
+    tags: outdoor offset
 
   - text: Наклейки
     link: stickers.html
@@ -68,14 +80,17 @@ categories:
   - text: Пластиковые карты
     link: plastic-cards.html
     image: images/latest_art_4.png
+    tags: offset souvenir
 
   - text: Рамки
     link: frames.html
     image: images/latest_art_5.png
+    tags: outdoor
 
   - text: Блокноты
     link: notepads.html
     image: images/latest_art_6.png
+    tags: souvenir
 
 ---
 
