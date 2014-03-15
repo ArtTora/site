@@ -5,76 +5,76 @@ description: ...
 keywords: ...
 
 slides:
-  - image: /images/home_slider_1.png
+  - image: images/home_slider_1.png
     description: Image description
 
-  - image: /images/home_slider_2.png
+  - image: images/home_slider_2.png
     description: Image description
 
 services:
   - text: Офсетная печать
     link: #
-    image: /images/computer_icon.png
+    image: images/computer_icon.png
 
   - text: Сувенирная печать
     link: #
-    image: /images/mob_icon.png
+    image: images/mob_icon.png
 
   - text: Широко- форматная печать
     link: #
-    image: /images/paint_icon.png
+    image: images/paint_icon.png
 
   - text: Наружная реклама
     link: #
-    image: /images/globe_icon.png
+    image: images/globe_icon.png
 
 categories:
   - text: Визитки
-    link: /cards.html
+    link: cards.html
     image: images/latest_art_1.png
 
   - text: Флаера
-    link: /flyers.html
+    link: flyers.html
     image: images/latest_art_2.png
 
   - text: Бланки
-    link: /forms.html
+    link: forms.html
     image: images/latest_art_3.png
 
   - text: Плакаты
-    link: /posters.html
+    link: posters.html
     image: images/latest_art_4.png
 
   - text: Буклеты
-    link: /booklets.html
+    link: booklets.html
     image: images/latest_art_5.png
 
   - text: Брошуры
-    link: /brochures.html
+    link: brochures.html
     image: images/latest_art_6.png
 
   - text: Пригласительные
-    link: /invitations.html
+    link: invitations.html
     image: images/latest_art_1.png
 
   - text: Календари
-    link: /calendars.html
+    link: calendars.html
     image: images/latest_art_2.png
 
   - text: Наклейки
-    link: /stickers.html
+    link: stickers.html
     image: images/latest_art_3.png
 
   - text: Пластиковые карты
-    link: /plastic-cards.html
+    link: plastic-cards.html
     image: images/latest_art_4.png
 
   - text: Рамки
-    link: /frames.html
+    link: frames.html
     image: images/latest_art_5.png
 
   - text: Блокноты
-    link: /notepads.html
+    link: notepads.html
     image: images/latest_art_6.png
 
 ---
