@@ -1,55 +1,6 @@
 //On Blur On Focus  
 $(document).ready(function() {
 
-$('#uname').blur(function(){
-var un_val=$(this).val();
-if($.trim(un_val)=="" || un_val=="Your Name")
-$(this).val("Your Name");
-});
-
-$('#uname').focus(function(){
-var un_val=$(this).val();
-if(un_val=="Your Name")
-$(this).val("");
-});
-
-$('#email').blur(function(){
-var em_val=$(this).val();
-if($.trim(em_val)=="" || em_val=="Email")
-$(this).val("Email");
-});
-
-$('#email').focus(function(){
-var em_val=$(this).val();
-if(em_val=="Email")
-$(this).val("");
-});
-
-$('#Message').blur(function(){
-var m_val=$(this).val();
-if($.trim(m_val)=="" || m_val=="Message")
-$(this).val("Message");
-});
-
-$('#Message').focus(function(){
-var m_val=$(this).val();
-if(m_val=="Message")
-$(this).val("");
-});
-
-$('#search').blur(function(){
-var se_val=$(this).val();
-if($.trim(se_val)=="" || se_val=="Search")
-$(this).val("Search");
-});
-
-$('#search').focus(function(){
-var se_val=$(this).val();
-if(se_val=="Search")
-$(this).val("");
-});
-
-});
 //bx Slider 
 $(document).ready(function(e) {
 $('.bxslider').bxSlider({
@@ -121,42 +72,3 @@ jQuery(window).load(function() {
         // will fade out the whole DIV that covers the website.
 	jQuery("#preloader").delay(1000).fadeOut("slow");
 })
-
-
-$(document).ready(function() {
-
-$('.btnValidate').click(function(e) {
-	var sEmail = $('.txtEmail').val();
-	if ($.trim(sEmail).length == 0) {
-		alert('Please enter valid email address');
-		e.preventDefault();
-	}
-	if (validateEmail(sEmail)) {
-		alert('Email is valid');
-	}
-	else {
-		alert('Invalid Email Address');
-		e.preventDefault();
-	}
-});
-
-
-function validateEmail(sEmail) {
-    var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-    if (filter.test(sEmail)) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-});
-
-
-
-
-
-
-
-
