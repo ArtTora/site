@@ -9,10 +9,12 @@ layout: default
     </div>
     <div class="span12 hs_left hs_top_sixty">
       {% for item in page.services %}
-      <div class="span3 hs_post">
-        <div class="span12 hs_service_thumb text-center"> <img src="{{ item.image }}" alt="computer_icon"/> </div>
-        <div class="span12 hs_services_title text-center"> <a href="#" class="filter" data-filter=".{{ item.tag }}"> {{ item.text }} </a> </div>
-      </div>
+      <a href="#" class="filter" data-filter=".{{ item.tag }}">
+        <div class="span3 hs_post">
+            <div class="span12 hs_service_thumb text-center"> <img src="{{ item.image }}" alt="computer_icon"/> </div>
+            <div class="span12 hs_services_title text-center"> {{ item.text }} </div>
+        </div>
+      </a> 
       {% endfor %}
     </div>
   </div>
