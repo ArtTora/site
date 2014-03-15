@@ -13,10 +13,15 @@ $(document).ready(function() {
       window.location = $(this).val();
     });
 
-    $('.filter').click(function(){
-        $('html, body').animate({ scrollTop: 800 }, 600);
+    viewport = $('html, body');
 
+    $('.filter').click(function(){
+        viewport.animate({ scrollTop: 800 }, 600);
         return false;
+    });
+
+    viewport.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(e){
+      if(e.which > 0 || e.type === "mousedown" || e.type === "mousewheel") viewport.stop();
     });
 
     //Portfolio Sorting Filter 
