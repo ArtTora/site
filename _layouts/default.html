@@ -1,0 +1,122 @@
+---
+site_title: Полиграфия Тора в Севастополе
+
+menu:
+  - text: Главная
+    link: /
+
+  - text: Дизайн
+    link: /design.html
+
+  - text: Прайс
+    link: /prices.html
+
+  - text: Контакты
+    link: /contacts.html
+
+---
+
+<!doctype html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+{% if page.title %}
+<title>{{ page.title }} | {{ page.site_title }}</title>
+{% else %}
+<title>{{ page.site_title }}</title>
+{% endif %}
+
+<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+<link rel="icon" type="image/ico" href="favicon.ico" />
+
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}" />
+{% endif %}
+
+{% if page.description %}
+<meta name="description" content="{{ page.description }}" />
+{% endif %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="/css/main.css" rel="stylesheet" type="text/css" media="screen" id="style" />
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"> </script>
+<script type="text/javascript" src="/js/bx.js"> </script>
+<script type="text/javascript" src="/js/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="/js/custom.js"> </script>
+
+<link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<div id="preloader">
+  <div id="status">Loading </div>
+</div>
+
+<div id="hs_top_wrap"> </div>
+
+<div class="container"> 
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="span3 logo"> <a href="/"> <img src="images/logo.png" alt="{{ page.site_title }} "/> </a> </div>
+      <div class="span7 hs_menu offset2">
+        <ul class="hs_main_menu_bar">
+          {% for item in page.menu %}
+          <li> <a href="{{ item.link }}">{{ item.text }}</a> </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {% if page.slides %}
+  <div class="row-fluid">
+    <div class="span12 hs_main_slider"> 
+      <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="hs_slider_mask">
+          <div class="carousel-inner">
+            {% for item in page.slides %}
+            <div class="{% if forloop.first %}active{% endif %} item"> <img src="{{ item.image }}" class="slider_mask" alt="{{ item.description }}"/></div>
+            {% endfor %}
+          </div>
+        </div>
+        <a class="carousel-control left" href="index.html#myCarousel" data-slide="prev"></a> <a class="carousel-control right" href="index.html#myCarousel" data-slide="next"></a> </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {{ content }}
+
+  <!-- Footer-Start -->
+  <div class="row-fluid">
+    <div class="span12 hs_top_fifty">
+      <div class="span12">
+        <h1 class="lined"> Find Us </h1>
+      </div>
+      <div class="span12 hs_left hs_footer_tagline"> there's always something new and innovative on our social wall... 
+        so let's join us </div>
+      <div class="span12 hs_social_area">
+        <ul class="hs_footer_menu">
+          <li> <a href="index.html#" class="hs_footer_facebook"> </a> </li>
+          <li> <a href="index.html#" class="hs_footer_twitter"> </a> </li>
+          <li> <a href="index.html#" class="hs_footer_linkedin"> </a> </li>
+          <li> <a href="index.html#" class="hs_footer_flickr"> </a> </li>
+          <li> <a href="index.html#" class="hs_footer_youtube"> </a> </li>
+          <li> <a href="index.html#" class="hs_footer_dribbble"> </a> </li>
+          <li> <a href="index.html#" class="hs_footer_delicious"> </a> </li>
+        </ul>
+      </div>
+      <div class="span12 text-center"> <img src="images/footer_shape.png" alt="shape"/> </div>
+      <div class="span6 offset3 hs_reserved text-center"> Copyright ©
+        Полиграфия Тора г. Севастополь, ул. Горького, 2 </div>
+    </div>
+  </div>
+  <!-- Footer-End --> 
+</div>
+
+<!--Container-End-->
+<div id="hs_bottom_wrap"> </div>
