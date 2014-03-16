@@ -74,10 +74,11 @@ $(document).ready(function() {
       window.location = $(this).val();
     });
 
-    viewport = $('html, body');
+    var viewport = $('html, body');
+    var filter = $('a.filter:first'); 
 
     $('.filter').click(function(){
-      viewport.animate({ scrollTop: 800 }, 600);
+      viewport.animate({ scrollTop: filter.position().top }, 600);
       return false;
     });
 

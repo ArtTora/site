@@ -90,6 +90,20 @@ menu:
   </div>
   {% endif %}
 
+  {% if page.info %}
+  <div class="row-fluid">
+    <div class="span12 hs_creative">
+      <div class="span1 hs_creative_thumb"> <img src="./images/creative_icon.png" alt="Creative"/> </div>
+      <div class="span11">
+        <div class="span11">
+          <h1>{{ page.info.title }}</h1>
+        </div>
+        <div class="span11 hs_left hs_creative_info"> {{ page.info.text }} </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
   {{ content }}
 
   <!-- Footer-Start -->
