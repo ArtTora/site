@@ -20,17 +20,15 @@ layout: default
     <div class="span12 hs_make_detail hs_left">
       <div class="span4">
         <div class="span2"> <img src="images/phone_icon.png" alt="Phone"/> </div>
-        <div class="span8"> +91. 123. 123. 1234 <br/>
-          +91. 123. 456. 7890 </div>
+        <div class="span8"> {{ page.phones }} </div>
       </div>
       <div class="span4">
         <div class="span2 hs_box"> <img src="images/box_icon.png" alt="email"/> </div>
-        <div class="span8"> <div style="height: 14px"></div> <a href="mailto:art_tora@mail.ru">art_tora@mail.ru</a> </div>
+        <div class="span8"> <div style="height: 14px"></div> <a href="mailto:{{ page.email }}">{{ page.email }}</a> </div>
       </div>
       <div class="span4">
         <div class="span2"> <img src="images/creative.png" alt="address"/> </div>
-        <div class="span8"> г. Севастополь  <br/>
-          ул. Горького, 2 </div>
+        <div class="span8"> {{ page.address }} </div>
       </div>
     </div>
   </div>
