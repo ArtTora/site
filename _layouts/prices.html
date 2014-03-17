@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% for item in page.prices %}
+  <h1>{{ item.name }}</h1>
+
+  {% for format in item.formats %}
+    <h3>{{ format.name }} ({{ format.size }})</h1>
+
+    <table width="100%">
+      {% for edition in format.editions %}
+        <tr>
+          <td>{{ edition[0] }}</td>
+          <td>{% if edition[1] == 0 %}-{% else %}{{ edition[1] }}{% endif %}</td>
+          <td>От 3 до 4 рабочих дней</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% endfor %}
+
+{% endfor %}
