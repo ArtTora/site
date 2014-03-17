@@ -310,7 +310,7 @@ a.hs_more {
 	margin-top: 12px;
 }
 .hs_inner_heading {
-	margin-top: 5px;
+	margin-top: 20px;
 }
 ul.hs_breadcrumb {
 	float: right;
@@ -1799,4 +1799,16 @@ iframe {
 .hs_main_latest a {
 	font-family: 'Marck Script', cursive;
 	font-size: 30px;
+}
+
+.price-list {
+  margin-top: 30px;
+}
+
+.price-list .span3 {
+  font-size: 16px;
+}
+
+.price-selects .empty {
+  font-size: 30px;
 }

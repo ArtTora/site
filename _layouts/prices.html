@@ -2,21 +2,78 @@
 layout: default
 ---
 
-{% for item in page.prices %}
-  <h1>{{ item.name }}</h1>
+<div class="row-fluid">
+  <div class="span12">
+    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
+    <div class="span12 hs_left">
+      <div class="span8 hs_inner_heading">
+        <h1>Быстрый поиск по прайсу</h1>
+      </div>
+    </div>
+    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
+  </div>
+</div>
 
-  {% for format in item.formats %}
-    <h3>{{ format.name }} ({{ format.size }})</h1>
+<div class="price-list row-fluid">
+  <div class="span3">Тип</div>
+  <div class="span3">Формат</div>
+  <div class="span3">Тираж</div>
+  <div class="span3">Стоимость</div>
+</div>
 
-    <table width="100%">
-      {% for edition in format.editions %}
-        <tr>
-          <td>{{ edition[0] }}</td>
-          <td>{% if edition[1] == 0 %}-{% else %}{{ edition[1] }}{% endif %}</td>
-          <td>От 3 до 4 рабочих дней</td>
-        </tr>
-      {% endfor %}
-    </table>
-  {% endfor %}
+<div class="price-selects row-fluid">
+  <div class="span3">
+    <select data-bind="value: selectedItem, options: items, optionsText: 'name', optionsCaption: 'Выберите тип...'">
+    </select>
+  </div>
 
-{% endfor %}
+  <div class="span3">
+    <span data-bind="if: selectedItem">
+      <select data-bind="value: selectedFormat, options: formats, optionsText: 'name', optionsCaption: 'Выберите формат...'">
+      </select>
+    </span>
+    <span data-bind="ifnot: selectedItem" class="empty">• • •</span>
+  </div>
+
+  <div class="span3">
+    <span data-bind="if: selectedFormat">
+      <select data-bind="value: selectedCopyCount, options: copyCounts, optionsText: 'value', optionsCaption: 'Выберите тираж...'">
+      </select>
+    </span>
+    <span data-bind="ifnot: selectedFormat" class="empty">• • •</span>
+  </div>
+
+  <div class="span3">
+    <span data-bind="if: selectedCopyCount">
+      <span data-bind="if: selectedCopyCount().price > 0">
+        Цена работы: <strong data-bind="text: selectedCopyCount().price"></strong> грн.
+      </span>
+
+      <span data-bind="if: selectedCopyCount().price == 0">
+        Так мы не может :]
+      </span>
+    </span>
+    <span data-bind="ifnot: selectedCopyCount" class="empty">• • •</span>
+  </div>
+</div>
+
+<script src="js/knockout-3.1.0.js"></script>
+<script src="js/price-list.js"></script>
+
+<script>
+  bindPriceList({{ page.prices | jsonify }});
+</script>
+
+<div class="row-fluid">
+  <div class="span12">
+    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
+    <div class="span12 hs_left">
+      <div class="span8 hs_inner_heading">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
+  </div>
+</div>
+
+{{ content }}

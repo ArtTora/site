@@ -559,7 +559,6 @@ a.text-success:hover, a.text-success:focus {
 	text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Cabin Sketch', cursive;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 	font-weight: normal;
@@ -573,7 +572,7 @@ h1 {
 	margin-top: 0;
 	margin-bottom: 0;
 	color: #000;
-	font-weight: 700;
+	font-weight: normal;
 	line-height: 1em;
 	
 }
