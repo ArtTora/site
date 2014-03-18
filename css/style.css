@@ -150,7 +150,7 @@ height: 360px;
 }
 .hs_main_latest {
 	margin: 30px 13px 0px 0px !important;
-    height: 375px;
+  height: 270px;
 }
 .hs_port_thumb {
 	background: url(../images/port_thumb_frame_small.png) no-repeat;
@@ -158,7 +158,7 @@ height: 360px;
 }
 .hs_latest {
 	margin-bottom: 2px;
-	height: 300px;
+	height: 220px;
 	-webkit-mask-image: url("../images/mask-thumb_small.png");
 	-o-mask-image: url(../images/mask-thumb_small.png);
 	-moz-mask-image: url(../images/mask-thumb_small.png);
@@ -1811,4 +1811,9 @@ iframe {
 
 .price-selects .empty {
   font-size: 30px;
+}
+
+#portfoliolist {
+  overflow: hidden;
+  padding-bottom: 30px;
 }
