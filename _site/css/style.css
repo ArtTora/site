@@ -153,25 +153,25 @@ height: 360px;
     height: 375px;
 }
 .hs_port_thumb {
-	background: url(../images/port_thumb_frame.png) no-repeat;
+	background: url(../images/port_thumb_frame_small.png) no-repeat;
 	margin-bottom: 15px;
 }
 .hs_latest {
 	margin-bottom: 2px;
 	height: 300px;
-	-webkit-mask-image: url("../images/mask-thumb.png");
-	-o-mask-image: url(../images/mask-thumb.png);
-	-moz-mask-image: url(../images/mask-thumb.png);
-	mask-image: url(../images/mask-thumb.png);
+	-webkit-mask-image: url("../images/mask-thumb_small.png");
+	-o-mask-image: url(../images/mask-thumb_small.png);
+	-moz-mask-image: url(../images/mask-thumb_small.png);
+	mask-image: url(../images/mask-thumb_small.png);
 }
 .hs_latest img {
 	width: 100%;
 }
 .hs_port_thumb:hover {
-	-webkit-mask-image: url(../images/frame_hover.png);
-	-o-mask-image: url(../images/frame_hover.png);
-	-moz-mask-image: url(../images/frame_hover.png);
-	mask-image: url(../images/frame_hover.png);
+	-webkit-mask-image: url(../images/frame_hover_small.png);
+	-o-mask-image: url(../images/frame_hover_small.png);
+	-moz-mask-image: url(../images/frame_hover_small.png);
+	mask-image: url(../images/frame_hover_small.png);
 	background-size: 100% 100%;
 }
 .hs_more_btn {
