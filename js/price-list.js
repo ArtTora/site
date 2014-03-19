@@ -20,12 +20,12 @@
 
     self.selectedFormat = ko.observable();
     self.selectedFormat.subscribe(function(value){
-        if(value) self.chromaticities = value.chromaticities;
+        if(value) self.chromaticities(value.chromaticities);
     });
 
     self.selectedChromaticite = ko.observable();
     self.selectedChromaticite.subscribe(function(value){
-        if(value) self.paperTypes = value.paper_types;
+        if(value) self.paperTypes(value.paper_types);
     });
 
     self.selectedPaperType = ko.observable();
