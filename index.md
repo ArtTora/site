@@ -243,8 +243,4 @@ categories:
     tags: large
 
 
-info:
-  title: Наши клиенты
-  image: images/home_slider_1.png
-    description: Image description
 ---
