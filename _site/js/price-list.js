@@ -7,6 +7,7 @@
     self.copyCounts = ko.observableArray([]);
     self.chromaticities = ko.observableArray([]);
     self.paperTypes = ko.observableArray([]);
+    self.options = ko.observableArray([]);
 
     self.selectedItem = ko.observable();
     self.selectedItem.subscribe(function(value){
@@ -42,6 +43,26 @@
     });
 
     self.selectedCopyCount = ko.observable();
+    self.selectedCopyCount.subscribe(function(value){
+        if(value){
+            var allOptions = self.selectedFormat().options;
+            var options = [];
+
+            for(var i = 0; i < allOptions.length; ++i){
+                var option = allOptions[i];
+
+                for(var ii = 0; ii < option.prices.length; ++ii){
+                    var price = option.prices[ii];
+
+                    if(price[0] == value.value){
+                        options.push(option);
+                    }
+                }
+            }
+
+            self.options(options);
+        }
+    });
   };
 
   global.bindPriceList = function(data){

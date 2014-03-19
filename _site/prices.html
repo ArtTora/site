@@ -107,6 +107,13 @@
       <select data-bind="value: selectedCopyCount, options: copyCounts, optionsText: 'value', optionsCaption: 'Выберите тираж...'">
       </select>
     </span>
+    <span data-bind="if: options().length > 0">
+      <div data-bind="foreach: options">
+        <div class="items">
+          <input type="checkbox"> <span data-bind="text: name"></span>
+        </div>
+      </div>
+    </span>
   </div>
 
   <div class="span2">
