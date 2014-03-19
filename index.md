@@ -29,12 +29,12 @@ services:
 
   - text: Широко- форматная печать
     link: #
-    image: images/paint_icon.png
+    image: images/paint_icon1.png
     tag: large
 
   - text: Наружная реклама
     link: #
-    image: images/globe_icon.png
+    image: images/paint_icon.png
     tag: outdoor
 
 categories:
@@ -242,4 +242,9 @@ categories:
     image: images/latest_art_6.png
     tags: large
 
+
+info:
+  title: Наши клиенты
+  image: images/home_slider_1.png
+    description: Image description
 ---
