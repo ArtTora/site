@@ -62,7 +62,7 @@ categories:
     image: images/latest_art_5.png
     tags: large
 
-  - text: Брошуры
+  - text: Брошюры
     link: brochures.html
     image: images/latest_art_6.png
     tags: large
@@ -86,7 +86,7 @@ categories:
     image: images/latest_art_4.png
     tags: offset souvenir
 
-  - text: Рамки
+  - text: Папки
     link: frames.html
     image: images/latest_art_5.png
     tags: outdoor
@@ -96,15 +96,150 @@ categories:
     image: images/latest_art_6.png
     tags: souvenir
 
-  - text: Блокноты
-    link: notepads.html
+  - text: Листовки
+    link: leaters.html
     image: images/latest_art_6.png
     tags: souvenir
 
-  - text: Объёмные буквы
-    link: obemnie_bykvi.html
+  - text: Футболка
+    link: shirts.html
     image: images/obemnie_bykvi.png
     tags: souvenir
+
+  - text: Чашка
+    link: caps.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Тарелка
+    link: plate.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Камень
+    link: stone.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Ручка
+    link: pen.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Брелок
+    link: trinket.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Пакет
+    link: packet.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Магнит
+    link: magnet.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Пазлы
+    link: puzzles.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Подушка, Наволочка
+    link: pillow_pillowcase.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Коврик (для мыши)
+    link: mousepad.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Баннер
+    link: banner.html
+    image: images/latest_art_1.png
+    tags: offset
+
+  - text: Оракал
+    link: oracal.html
+    image: images/latest_art_2.png
+    tags: souvenir
+
+  - text: Сетка Mesh
+    link: mesh.html
+    image: images/latest_art_3.png
+    tags: large
+
+  - text: One Way Vision
+    link: one_vision.html
+    image: images/latest_art_4.png
+    tags: souvenir
+
+  - text: Холст
+    link: holst.html
+    image: images/latest_art_5.png
+    tags: large
+
+  - text: Флаг
+    link: flag.html
+    image: images/latest_art_6.png
+    tags: large
+
+  - text: Штендер
+    link: shtender.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Объемные буквы
+    link: large_letters.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Световой короб
+    link: light_box.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Крышная установка
+    link: roof_unit.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Композит
+    link: compo.html
+    image: images/obemnie_bykvi.png
+    tags: souvenir
+
+  - text: Стенд
+    link: stand.html
+    image: images/latest_art_1.png
+    tags: offset
+
+  - text: Стелла
+    link:  stella.html
+    image: images/latest_art_2.png
+    tags: souvenir
+
+  - text: Таблички
+    link: plates.html
+    image: images/latest_art_3.png
+    tags: large
+
+  - text: Вывески
+    link: signs.html
+    image: images/latest_art_4.png
+    tags: souvenir
+
+  - text: Брэндмауэр
+    link: firewall.html
+    image: images/latest_art_5.png
+    tags: large
+
+  - text: Кронштейн
+    link: bracket.html
+    image: images/latest_art_6.png
+    tags: large
 
 ---
 
