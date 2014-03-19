@@ -69,35 +69,47 @@
 </div>
 
 <div class="price-list row-fluid">
-  <div class="span3">Тип</div>
-  <div class="span3">Формат</div>
-  <div class="span3">Тираж</div>
-  <div class="span3">Стоимость</div>
+  <div class="span2">Тип</div>
+  <div class="span2">Формат</div>
+  <div class="span2">Цветность</div>
+  <div class="span2">Тип бумаги</div>
 </div>
 
 <div class="price-selects row-fluid">
-  <div class="span3">
+  <div class="span2">
     <select data-bind="value: selectedItem, options: items, optionsText: 'name', optionsCaption: 'Выберите тип...'">
     </select>
   </div>
 
-  <div class="span3">
+  <div class="span2">
     <span data-bind="if: selectedItem">
       <select data-bind="value: selectedFormat, options: formats, optionsText: 'name', optionsCaption: 'Выберите формат...'">
       </select>
     </span>
-    <span data-bind="ifnot: selectedItem" class="empty">• • •</span>
+  </div>
+
+  <div class="span2">
+    <span data-bind="if: selectedFormat">
+      <select data-bind="value: selectedChromaticite, options: chromaticities, optionsText: 'name', optionsCaption: 'Цветность...'">
+      </select>
+    </span>
+  </div>
+
+  <div class="span2">
+    <span data-bind="if: selectedChromaticite">
+      <select data-bind="value: selectedPaperType, options: paperTypes, optionsText: 'name', optionsCaption: 'Тип бумаги...'">
+      </select>
+    </span>
   </div>
 
   <div class="span3">
-    <span data-bind="if: selectedFormat">
+    <span data-bind="if: selectedPaperType">
       <select data-bind="value: selectedCopyCount, options: copyCounts, optionsText: 'value', optionsCaption: 'Выберите тираж...'">
       </select>
     </span>
-    <span data-bind="ifnot: selectedFormat" class="empty">• • •</span>
   </div>
 
-  <div class="span3">
+  <div class="span2">
     <span data-bind="if: selectedCopyCount">
       <span data-bind="if: selectedCopyCount().price > 0">
         Цена работы: <strong data-bind="text: selectedCopyCount().price"></strong> грн.
@@ -107,7 +119,6 @@
         Так мы не может :]
       </span>
     </span>
-    <span data-bind="ifnot: selectedCopyCount" class="empty">• • •</span>
   </div>
 </div>
 
@@ -115,7 +126,7 @@
 <script src="js/price-list.js"></script>
 
 <script>
-  bindPriceList([{"name":"Флаера","formats":[{"name":"Флаера (210х100)","copyCounts":[[10,0],[30,0],[50,0],[100,0],[150,0],[200,0],[1000,330]]},{"name":"МиниФлаера (100х100)","copyCounts":[[10,0],[30,0],[50,0],[100,0],[150,0],[200,0],[1000,330]]},{"name":"Флаера на картоне (200х90)","copyCounts":[[10,0],[30,0],[50,0],[100,0],[150,0],[200,0],[1000,330]]}]},{"name":"Плакаты","formats":[{"name":"Флаера (210х100)","copyCounts":[[10,0],[30,0],[50,0],[100,0],[150,0],[200,0],[1000,330]]},{"name":"МиниФлаера (100х100)","copyCounts":[[10,0],[30,0],[50,0],[100,0],[150,0],[200,0],[1000,330]]},{"name":"Флаера на картоне (200х90)","copyCounts":[[10,0],[30,0],[50,0],[100,0],[150,0],[200,0],[1000,330]]}]}]);
+  bindPriceList([{"name":"Визитки","formats":[{"name":"50x90","options":[{"name":"Закругление углов","prices":[[100,15],[1000,80]]},{"name":"Фольгирование","prices":[[100,30]]}],"chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"300 гр/м","copyCount":[[100,40],[1000,120]]}]},{"name":"Двухсторонная","paper_types":[{"name":300,"copyCount":[[100,40],[1000,120]]}]}]},{"name":"55x 86","options":[{"name":"Закругление углов","prices":[[100,15],[1000,80]]}],"chromaticities":[{"name":"Односторонняя","paper_types":[{"name":300,"copyCount":[[100,40],[1000,120]]}]},{"name":"Двухсторонная","paper_types":[{"name":300,"copyCount":[[100,40],[1000,120]]}]}]}]},{"name":"Флаера","formats":[{"name":"100*100","chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[2000,270]]}]},{"name":"Двухсторонная","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[2000,270],[6000,400],[10000,520],[20000,820],[40000,1520]]}]}]},{"name":"200x90","chromaticities":[{"name":"Двухсторонная","paper_types":[{"name":"300 гр/м картон","copyCount":[[1000,450],[2000,840],[3000,1240]]}]}]},{"name":"210*100","chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[1000,330]]}]},{"name":"Двухсторонная","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[1000,330],[3000,776],[5000,1015],[10000,1350],[20000,2400],[40000,3200]]}]}]}]}]);
 </script>
 
 <div class="row-fluid">

@@ -5,6 +5,8 @@
     self.items = ko.observableArray(data);
     self.formats = ko.observableArray([]);
     self.copyCounts = ko.observableArray([]);
+    self.chromaticities = ko.observableArray([]);
+    self.paperTypes = ko.observableArray([]);
 
     self.selectedItem = ko.observable();
     self.selectedItem.subscribe(function(value){
@@ -18,11 +20,21 @@
 
     self.selectedFormat = ko.observable();
     self.selectedFormat.subscribe(function(value){
+        if(value) self.chromaticities = value.chromaticities;
+    });
+
+    self.selectedChromaticite = ko.observable();
+    self.selectedChromaticite.subscribe(function(value){
+        if(value) self.paperTypes = value.paper_types;
+    });
+
+    self.selectedPaperType = ko.observable();
+    self.selectedPaperType.subscribe(function(value){
       if(value){
         var data = [];
 
-        for(var i = 0; i < value.copyCounts.length; ++i){
-          data.push({ value: value.copyCounts[i][0], price: value.copyCounts[i][1] });
+        for(var i = 0; i < value.copyCount.length; ++i){
+          data.push({ value: value.copyCount[i][0], price: value.copyCount[i][1] });
         }
 
         self.copyCounts(data);  

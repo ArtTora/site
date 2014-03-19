@@ -15,35 +15,47 @@ layout: default
 </div>
 
 <div class="price-list row-fluid">
-  <div class="span3">Тип</div>
-  <div class="span3">Формат</div>
-  <div class="span3">Тираж</div>
-  <div class="span3">Стоимость</div>
+  <div class="span2">Тип</div>
+  <div class="span2">Формат</div>
+  <div class="span2">Цветность</div>
+  <div class="span2">Тип бумаги</div>
 </div>
 
 <div class="price-selects row-fluid">
-  <div class="span3">
+  <div class="span2">
     <select data-bind="value: selectedItem, options: items, optionsText: 'name', optionsCaption: 'Выберите тип...'">
     </select>
   </div>
 
-  <div class="span3">
+  <div class="span2">
     <span data-bind="if: selectedItem">
       <select data-bind="value: selectedFormat, options: formats, optionsText: 'name', optionsCaption: 'Выберите формат...'">
       </select>
     </span>
-    <span data-bind="ifnot: selectedItem" class="empty">• • •</span>
+  </div>
+
+  <div class="span2">
+    <span data-bind="if: selectedFormat">
+      <select data-bind="value: selectedChromaticite, options: chromaticities, optionsText: 'name', optionsCaption: 'Цветность...'">
+      </select>
+    </span>
+  </div>
+
+  <div class="span2">
+    <span data-bind="if: selectedChromaticite">
+      <select data-bind="value: selectedPaperType, options: paperTypes, optionsText: 'name', optionsCaption: 'Тип бумаги...'">
+      </select>
+    </span>
   </div>
 
   <div class="span3">
-    <span data-bind="if: selectedFormat">
+    <span data-bind="if: selectedPaperType">
       <select data-bind="value: selectedCopyCount, options: copyCounts, optionsText: 'value', optionsCaption: 'Выберите тираж...'">
       </select>
     </span>
-    <span data-bind="ifnot: selectedFormat" class="empty">• • •</span>
   </div>
 
-  <div class="span3">
+  <div class="span2">
     <span data-bind="if: selectedCopyCount">
       <span data-bind="if: selectedCopyCount().price > 0">
         Цена работы: <strong data-bind="text: selectedCopyCount().price"></strong> грн.
@@ -53,7 +65,6 @@ layout: default
         Так мы не может :]
       </span>
     </span>
-    <span data-bind="ifnot: selectedCopyCount" class="empty">• • •</span>
   </div>
 </div>
 

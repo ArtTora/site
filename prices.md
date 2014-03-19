@@ -9,76 +9,75 @@ prices:
 
     formats:
       - name: 50x90
-
+ 
         options:
           - name: Закругление углов
             prices: [[100, 15], [1000, 80]]
-
+ 
           - name: Фольгирование
             prices: [[100, 30]]
-
+ 
         chromaticities:
           - name: Односторонняя
             paper_types:
               - name: 300 гр/м
                 copyCount: [[100, 40], [1000, 120]]
-
-              - name: 300 гр/м
-                copyCount: [[100, 40], [1000, 120]]
-
+ 
           - name:  Двухсторонная
             paper_types:
               - name: 300
                 copyCount: [[100, 40], [1000, 120]]
-
+ 
       - name: 55x 86 
         options:
           - name: Закругление углов
             prices: [[100, 15], [1000, 80]]
-
+ 
         chromaticities:
           - name: Односторонняя
             paper_types:
               - name: 300
                 copyCount: [[100, 40], [1000, 120]]
-
+ 
           - name:  Двухсторонная
             paper_types:
               - name: 300
                 copyCount: [[100, 40], [1000, 120]]
+ 
 
 
-
-   - name: Флаера
+  - name: Флаера
 
     formats:
       - name: 100*100
-
+ 
         chromaticities:
           - name: Односторонняя
             paper_types:
               - name: 130 гр/м Глянцевая
                 copyCount: [[2000, 270]]
-
+ 
           - name:  Двухсторонная
             paper_types:
               - name: 130 гр/м Глянцевая
                 copyCount: [[2000, 270], [6000, 400], [10000, 520], [20000, 820], [40000, 1520]]
-
+ 
       - name: 200x90 
+
+        chromaticities:
           - name:  Двухсторонная
             paper_types:
               - name: 300 гр/м картон
                 copyCount: [[1000, 450], [2000, 840], [3000, 1240]]
-
+ 
       - name: 210*100
-
+ 
         chromaticities:
           - name: Односторонняя
             paper_types:
               - name: 130 гр/м Глянцевая
                 copyCount: [[1000, 330]]
-
+ 
           - name:  Двухсторонная
             paper_types:
               - name: 130 гр/м Глянцевая

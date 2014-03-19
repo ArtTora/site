@@ -1813,6 +1813,10 @@ iframe {
   font-size: 30px;
 }
 
+.price-selects select {
+  width: 140px;
+}
+
 #portfoliolist {
   overflow: hidden;
   padding-bottom: 30px;
