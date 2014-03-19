@@ -7,10 +7,9 @@ layout: default
     <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
     <div class="span12 hs_left">
       <div class="span8 hs_inner_heading">
-        <h1>Быстрый поиск по прайсу</h1>
+        <h1>Офсетная печать</h1>
       </div>
     </div>
-    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
   </div>
 </div>
 
@@ -19,6 +18,8 @@ layout: default
   <div class="span2">Формат</div>
   <div class="span2">Цветность</div>
   <div class="span2">Тип бумаги</div>
+  <div class="span2">Тираж</div>
+  <div class="span2">Стоимость</div>
 </div>
 
 <div class="price-selects row-fluid">
@@ -75,11 +76,49 @@ layout: default
   </div>
 </div>
 
+<div class="row-fluid">
+  <div class="span12">
+    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
+    <div class="span12 hs_left">
+      <div class="span8 hs_inner_heading">
+        <h1>Сувенирная печать</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="price-list row-fluid">
+  <div class="span2">Прродукция</div>
+  <div class="span2">Размер</div>
+  <div class="span2">Цветность</div>
+  <div class="span2">Материал</div>
+  <div class="span2">Тираж</div>
+  <div class="span2">Стоимость</div>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
+    <div class="span12 hs_left">
+      <div class="span8 hs_inner_heading">
+        <h1>Широкоформатная печать</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="price-list row-fluid">
+  <div class="span2">Материал</div>
+  <div class="span2">Формат</div>
+  <div class="span2">Опции</div>
+  <div class="span2">Стоимость</div>
+</div>
+
 <script src="js/knockout-3.1.0.js"></script>
 <script src="js/price-list.js"></script>
 
 <script>
-  bindPriceList({{ page.prices | jsonify }});
+  bindPriceList({{ page.prices_for_offset | jsonify }});
 </script>
 
 <div class="row-fluid">

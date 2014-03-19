@@ -44,8 +44,9 @@
 
     self.selectedCopyCount = ko.observable();
     self.selectedCopyCount.subscribe(function(value){
-        if(value){
-            var allOptions = self.selectedFormat().options;
+        var allOptions = self.selectedPaperType().options;
+
+        if(value && allOptions){
             var options = [];
 
             for(var i = 0; i < allOptions.length; ++i){

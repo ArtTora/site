@@ -61,10 +61,9 @@
     <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
     <div class="span12 hs_left">
       <div class="span8 hs_inner_heading">
-        <h1>Быстрый поиск по прайсу</h1>
+        <h1>Офсетная печать</h1>
       </div>
     </div>
-    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
   </div>
 </div>
 
@@ -73,6 +72,8 @@
   <div class="span2">Формат</div>
   <div class="span2">Цветность</div>
   <div class="span2">Тип бумаги</div>
+  <div class="span2">Тираж</div>
+  <div class="span2">Стоимость</div>
 </div>
 
 <div class="price-selects row-fluid">
@@ -129,11 +130,49 @@
   </div>
 </div>
 
+<div class="row-fluid">
+  <div class="span12">
+    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
+    <div class="span12 hs_left">
+      <div class="span8 hs_inner_heading">
+        <h1>Сувенирная печать</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="price-list row-fluid">
+  <div class="span2">Прродукция</div>
+  <div class="span2">Размер</div>
+  <div class="span2">Цветность</div>
+  <div class="span2">Материал</div>
+  <div class="span2">Тираж</div>
+  <div class="span2">Стоимость</div>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+    <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
+    <div class="span12 hs_left">
+      <div class="span8 hs_inner_heading">
+        <h1>Широкоформатная печать</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="price-list row-fluid">
+  <div class="span2">Материал</div>
+  <div class="span2">Формат</div>
+  <div class="span2">Опции</div>
+  <div class="span2">Стоимость</div>
+</div>
+
 <script src="js/knockout-3.1.0.js"></script>
 <script src="js/price-list.js"></script>
 
 <script>
-  bindPriceList([{"name":"Визитки","formats":[{"name":"50x90","options":[{"name":"Закругление углов","prices":[[100,15],[1000,80]]},{"name":"Фольгирование","prices":[[100,30]]}],"chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"300 гр/м","copyCount":[[100,40],[1000,120]]},{"name":"под Глянцевой плёнкой","copyCount":[[100,60]]},{"name":"под Матовой плёнкой","copyCount":[[100,70]]},{"name":"Плотная ламинация","copyCount":[[100,100]]},{"name":"Картон с лакировкой лицевой стороны","copyCount":[[1000,120],[5000,550],[10000,950],[20000,1700]]},{"name":"Дизайнерский картон","copyCount":[[100,150]]}]},{"name":"Двухсторонная","paper_types":[{"name":"300 гр/м","copyCount":[[100,55],[1000,120]]},{"name":"под Глянцевой плёнкой","copyCount":[[100,75]]},{"name":"под Матовой плёнкой","copyCount":[[100,85]]},{"name":"Плотная ламинация","copyCount":[[100,120]]},{"name":"Картон с лакировкой лицевой стороны","copyCount":[[1000,120],[5000,550],[10000,950],[20000,1700]]},{"name":"Дизайнерский картон","copyCount":[[100,180]]}]}]},{"name":"55x 86","options":[{"name":"Закругление углов","prices":[[100,15],[1000,80]]}],"chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"300 гр/м","copyCount":[[100,40]]}]},{"name":"Двухсторонная","paper_types":[{"name":"300 гр/м","copyCount":[[100,40],[1000,120]]}]}]}]},{"name":"Флаера","formats":[{"name":"100*100","chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[2000,270]]}]},{"name":"Двухсторонная","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[2000,270],[6000,400],[10000,520],[20000,820],[40000,1520]]}]}]},{"name":"200x90","chromaticities":[{"name":"Двухсторонная","paper_types":[{"name":"300 гр/м картон","copyCount":[[1000,450],[2000,840],[3000,1240]]}]}]},{"name":"210*100","chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[1000,330]]}]},{"name":"Двухсторонная","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[1000,330],[3000,776],[5000,1015],[10000,1350],[20000,2400],[40000,3200]]}]}]}]}]);
+  bindPriceList([{"name":"Визитки","formats":[{"name":"50x90","chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"300 гр/м","copyCount":[[100,40]],"options":[{"name":"Закругление углов","prices":[[100,15]]},{"name":"Фольгирование","prices":[[100,30]]}]},{"name":"под Глянцевой плёнкой","copyCount":[[100,60]],"options":[{"name":"Закругление углов","prices":[[100,15]]},{"name":"Фольгирование","prices":[[100,30]]}]},{"name":"под Матовой плёнкой","copyCount":[[100,70]],"options":[{"name":"Закругление углов","prices":[[100,15]]},{"name":"Фольгирование","prices":[[100,30]]}]},{"name":"Плотная ламинация","copyCount":[[100,100]],"options":[{"name":"Закругление углов","prices":[[100,20]]}]},{"name":"Картон с лакировкой лицевой стороны","copyCount":[[1000,120],[5000,550],[10000,950],[20000,1700]],"options":[{"name":"Закругление углов","prices":[[1000,80],[5000,120],[10000,240],[20000,320]]}]},{"name":"Дизайнерский картон","copyCount":[[100,150]],"options":[{"name":"Закругление углов","prices":[[100,15]]},{"name":"Фольгирование","prices":[[100,30]]}]}]},{"name":"Двухсторонная","paper_types":[{"name":"300 гр/м","copyCount":[[100,55]],"options":[{"name":"Закругление углов","prices":[[100,15]]},{"name":"Фольгирование","prices":[[100,30]]}]},{"name":"под Глянцевой плёнкой","copyCount":[[100,75]],"options":[{"name":"Закругление углов","prices":[[100,15]]},{"name":"Фольгирование","prices":[[100,30]]}]},{"name":"под Матовой плёнкой","copyCount":[[100,85]],"options":[{"name":"Закругление углов","prices":[[100,15]]},{"name":"Фольгирование","prices":[[100,30]]}]},{"name":"Плотная ламинация","copyCount":[[100,120]],"options":[{"name":"Закругление углов","prices":[[100,20]]}]},{"name":"Картон с лакировкой лицевой стороны","copyCount":[[1000,120],[5000,550],[10000,950],[20000,1700]],"options":[{"name":"Закругление углов","prices":[[1000,80],[5000,120],[10000,240],[20000,360]]}]},{"name":"Дизайнерский картон","copyCount":[[100,180]],"options":[{"name":"Закругление углов","prices":[[100,15]]},{"name":"Фольгирование","prices":[[100,30]]}]}]}]},{"name":"55x 86","chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"Плотная ламинация с высечкой под пластиковую карту","copyCount":[[100,160]]}]},{"name":"Двухсторонная","paper_types":[{"name":"Плотная ламинация с высечкой под пластиковую карту","copyCount":[[100,180]]}]}]}]},{"name":"Флаера","formats":[{"name":"100*100","chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[2000,270]]}]},{"name":"Двухсторонная","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[2000,270],[6000,400],[10000,520],[20000,820],[40000,1520]]}]}]},{"name":"200x90","chromaticities":[{"name":"Двухсторонная","paper_types":[{"name":"300 гр/м картон","copyCount":[[1000,450],[2000,840],[3000,1240]]}]}]},{"name":"210*100","chromaticities":[{"name":"Односторонняя","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[1000,330]]}]},{"name":"Двухсторонная","paper_types":[{"name":"130 гр/м Глянцевая","copyCount":[[1000,330],[3000,776],[5000,1015],[10000,1350],[20000,2400],[40000,3200]]}]}]}]}]);
 </script>
 
 <div class="row-fluid">
