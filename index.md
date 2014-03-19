@@ -46,61 +46,62 @@ categories:
   - text: Флаера
     link: flyers.html
     image: images/latest_art_2.png
-    tags: souvenir
+    tags: offset
 
   - text: Бланки
     link: forms.html
     image: images/latest_art_3.png
-    tags: large
+    tags: offset
 
   - text: Плакаты
     link: posters.html
     image: images/latest_art_4.png
-    tags: souvenir
+    tags: offset
 
   - text: Буклеты
     link: booklets.html
     image: images/latest_art_5.png
-    tags: large
+    tags: offset
 
   - text: Брошюры
     link: brochures.html
     image: images/latest_art_6.png
-    tags: large
+    tags: offset
 
   - text: Пригласительные
     link: invitations.html
     image: images/latest_art_1.png
-    tags: offset large
+    tags: offset
 
   - text: Календари
     link: calendars.html
     image: images/latest_art_2.png
-    tags: outdoor offset
+    tags: offset
 
   - text: Наклейки
     link: stickers.html
     image: images/latest_art_3.png
+    tags: offset
 
   - text: Пластиковые карты
     link: plastic-cards.html
     image: images/latest_art_4.png
-    tags: offset souvenir
+    tags: offset 
 
   - text: Папки
     link: frames.html
     image: images/latest_art_5.png
-    tags: outdoor
+    tags: offset
 
   - text: Блокноты
     link: notepads.html
     image: images/latest_art_6.png
-    tags: souvenir
+    tags: offset
 
   - text: Листовки
     link: leaters.html
     image: images/latest_art_6.png
-    tags: souvenir
+    tags: offset
 
   - text: Футболка
     link: shirts.html
@@ -160,12 +161,12 @@ categories:
   - text: Баннер
     link: banner.html
     image: images/latest_art_1.png
-    tags: offset
+    tags: large
 
   - text: Оракал
     link: oracal.html
     image: images/latest_art_2.png
-    tags: souvenir
+    tags: large
 
   - text: Сетка Mesh
     link: mesh.html
@@ -175,7 +176,7 @@ categories:
   - text: One Way Vision
     link: one_vision.html
     image: images/latest_art_4.png
-    tags: souvenir
+    tags: large
 
   - text: Холст
     link: holst.html
@@ -190,57 +191,57 @@ categories:
   - text: Штендер
     link: shtender.html
     image: images/obemnie_bykvi.png
-    tags: souvenir
+    tags: outdoor
 
   - text: Объемные буквы
     link: large_letters.html
     image: images/obemnie_bykvi.png
-    tags: souvenir
+    tags: outdoor
 
   - text: Световой короб
     link: light_box.html
     image: images/obemnie_bykvi.png
-    tags: souvenir
+    tags: outdoor
 
   - text: Крышная установка
     link: roof_unit.html
     image: images/obemnie_bykvi.png
-    tags: souvenir
+    tags: outdoor
 
   - text: Композит
     link: compo.html
     image: images/obemnie_bykvi.png
-    tags: souvenir
+    tags: outdoor
 
   - text: Стенд
     link: stand.html
     image: images/latest_art_1.png
-    tags: offset
+    tags: outdoor
 
   - text: Стелла
     link:  stella.html
     image: images/latest_art_2.png
-    tags: souvenir
+    tags: outdoor
 
   - text: Таблички
     link: plates.html
     image: images/latest_art_3.png
-    tags: large
+    tags: outdoor
 
   - text: Вывески
     link: signs.html
     image: images/latest_art_4.png
-    tags: souvenir
+    tags: outdoor
 
   - text: Брэндмауэр
     link: firewall.html
     image: images/latest_art_5.png
-    tags: large
+    tags: outdoor
 
   - text: Кронштейн
     link: kronshtein.html
     image: images/latest_art_6.png
-    tags: large
+    tags: outdoor
 
 
 ---
