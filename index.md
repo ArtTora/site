@@ -48,58 +48,58 @@ categories:
     image: images/latest_art_2.png
     tags: offset
 
-  - text: Бланки
-    link: forms.html
+  - text: Листовки
+    link: leaters.html
     image: images/latest_art_3.png
     tags: offset
 
-  - text: Плакаты
-    link: posters.html
+  - text: Бланки
+    link: forms.html
     image: images/latest_art_4.png
+    tags: offset
+
+  - text: Пластиковые крты
+    link: plastic-cards.html
+    image: images/latest_art_5.png
     tags: offset
 
   - text: Буклеты
     link: booklets.html
-    image: images/latest_art_5.png
+    image: images/latest_art_6.png
     tags: offset
 
   - text: Брошюры
     link: brochures.html
-    image: images/latest_art_6.png
-    tags: offset
-
-  - text: Пригласительные
-    link: invitations.html
     image: images/latest_art_1.png
     tags: offset
 
-  - text: Календари
-    link: calendars.html
+  - text: Папки
+    link: frames.html
     image: images/latest_art_2.png
+    tags: offset
+
+  - text: Пригласительные
+    link: invitation.html
+    image: images/latest_art_3.png
     tags: offset
 
   - text: Наклейки
     link: stickers.html
-    image: images/latest_art_3.png
-    tags: offset
-
-  - text: Пластиковые карты
-    link: plastic-cards.html
     image: images/latest_art_4.png
     tags: offset 
 
-  - text: Папки
-    link: frames.html
+  - text: Календари
+    link: calendars.html
     image: images/latest_art_5.png
+    tags: offset
+
+  - text: Плакаты
+    link: posters.html
+    image: images/latest_art_6.png
     tags: offset
 
   - text: Блокноты
     link: notepads.html
-    image: images/latest_art_6.png
-    tags: offset
-
-  - text: Листовки
-    link: leaters.html
     image: images/latest_art_6.png
     tags: offset
 
