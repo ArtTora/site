@@ -58,7 +58,7 @@ categories:
     image: images/latest_art_4.png
     tags: offset
 
-  - text: Пластиковые крты
+  - text: Пластиковые карты
     link: plastic-cards.html
     image: images/latest_art_5.png
     tags: offset
@@ -68,7 +68,7 @@ categories:
     image: images/latest_art_6.png
     tags: offset
 
-  - text: Брошюры
+  - text: Каталог
     link: brochures.html
     image: images/latest_art_1.png
     tags: offset
@@ -77,7 +77,7 @@ categories:
     link: frames.html
     image: images/latest_art_2.png
     tags: offset
-
+  
   - text: Пригласительные
     link: invitation.html
     image: images/latest_art_3.png
