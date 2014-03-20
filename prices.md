@@ -238,8 +238,12 @@ prices_for_offset:
 
               - name: 300 гр/м 
                 copyCount: [[150, 260], [300, 360], [450, 470]] 
-
-              - name: 350 гр/м (200*90)
+    formats:
+      - name: А6(200*90) с перфорацией
+        chromaticities:
+          - name:  Двухсторонная
+            paper_types:
+              - name: 350 гр/м    
                 copyCount: [[1000, 500], [2000, 920], [3000, 1320]]
 
 
