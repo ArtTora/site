@@ -31,6 +31,12 @@ ul.hs_main_menu_bar li a {
 	font-size: 16px;
 	color: #737373;
 	text-transform: capitalize;
+  width: 179px;
+  height: 73px;
+  overflow: hidden;
+  text-indent: -999em;
+  display: block;
+  background: url(../images/menu.png) no-repeat;
 }
 ul.hs_main_menu_bar li a:hover {
 	color: #000;
@@ -967,6 +973,7 @@ ul.hs_main_menu_bar li {
 	padding: 5px 8px 5px 8px;
 }
 ul.hs_main_menu_bar li a {
+  display: block;
 	font-size: 17px;
 }
 .hs_menu {
