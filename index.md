@@ -53,7 +53,7 @@ categories:
     image: images/latest_art_3.png
     tags: offset
 
-  - text: Бланки
+  - text: Бланки, Объявления
     link: forms.html
     image: images/latest_art_4.png
     tags: offset
