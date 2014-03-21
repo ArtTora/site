@@ -4,15 +4,19 @@ site_title: Полиграфия Тора в Севастополе
 menu:
   - text: Главная
     link: index.html
+    class: home
 
   - text: Дизайн
     link: design.html
+    class: design
 
   - text: Прайс
     link: prices.html
+    class: prices
 
   - text: Контакты
     link: contacts.html
+    class: contacts
 
 ---
 
@@ -63,7 +67,7 @@ menu:
       <div class="span7 hs_menu offset2">
         <ul class="hs_main_menu_bar">
           {% for item in page.menu %}
-          <li> <a href="{{ item.link }}">{{ item.text }}</a> </li>
+          <li> <a class="{{ item.class }}" href="{{ item.link }}">{{ item.text }}</a> </li>
           {% endfor %}
         </ul>
       </div>

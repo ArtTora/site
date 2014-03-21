@@ -31,16 +31,23 @@ ul.hs_main_menu_bar li a {
 	font-size: 16px;
 	color: #737373;
 	text-transform: capitalize;
-  width: 179px;
-  height: 73px;
+  width: 75px;
+  height: 30px;
   overflow: hidden;
   text-indent: -999em;
   display: block;
   background: url(../images/menu.png) no-repeat;
 }
-ul.hs_main_menu_bar li a:hover {
-	color: #000;
-}
+
+ul.hs_main_menu_bar li a.design { background-position: 0 -30px }
+ul.hs_main_menu_bar li a.prices { background-position: 0 -60px }
+ul.hs_main_menu_bar li a.contacts { background-position: 0 -90px }
+
+ul.hs_main_menu_bar li a.home:hover { background-position: -75px 0 }
+ul.hs_main_menu_bar li a.design:hover { background-position: -75px -30px }
+ul.hs_main_menu_bar li a.prices:hover { background-position: -75px -60px }
+ul.hs_main_menu_bar li a.contacts:hover { background-position: -75px -90px }
+
 ul.hs_main_menu_bar li a.active {
 	color: #000;
 }
@@ -156,7 +163,7 @@ height: 360px;
 }
 .hs_main_latest {
 	margin: 30px 13px 0px 0px !important;
-  height: 270px;
+  height: 290px;
 }
 .hs_port_thumb {
 	background: url(../images/port_thumb_frame_small.png) no-repeat;
@@ -1805,7 +1812,7 @@ iframe {
 
 .hs_main_latest a {
 	font-family: 'Marck Script', cursive;
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .price-list {
