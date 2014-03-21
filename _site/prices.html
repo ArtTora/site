@@ -103,7 +103,7 @@
     </span>
   </div>
 
-  <div class="span3">
+  <div class="span2">
     <span data-bind="if: selectedPaperType">
       <select data-bind="value: selectedCopyCount, options: copyCounts, optionsText: 'value', optionsCaption: 'Выберите тираж...'">
       </select>
@@ -111,7 +111,8 @@
     <span data-bind="if: options().length > 0">
       <div data-bind="foreach: options">
         <div class="items">
-          <input type="checkbox"> <span data-bind="text: name"></span>
+          <input type="checkbox" data-bind="checked: $root.checkedOptions, checkedValue: $data">
+          <span data-bind="text: name"></span>
         </div>
       </div>
     </span>
@@ -119,11 +120,11 @@
 
   <div class="span2">
     <span data-bind="if: selectedCopyCount">
-      <span data-bind="if: selectedCopyCount().price > 0">
-        Цена работы: <strong data-bind="text: selectedCopyCount().price"></strong> грн.
+      <span data-bind="if: $root.totalSum() > 0">
+        <strong data-bind="text: $root.totalSum()"></strong> грн.
       </span>
 
-      <span data-bind="if: selectedCopyCount().price == 0">
+      <span data-bind="if: $root.totalSum() == 0">
         Так мы не может :]
       </span>
     </span>

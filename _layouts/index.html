@@ -51,9 +51,9 @@ layout: default
     <div class="span12 hs_left  hs_slider_base"> 
       <div class="span12 hs_slider_client">
         <ul class="bxslider">
-          {% for row from page.clients %}
+          {% for row in page.clients %}
           <li>
-            {% for client from row.clients %}
+            {% for client in row.slide %}
               <div class="hs_client_logo">
                 <a href="{{ client.link }}">
                   <img src="{{ client.image }}" alt="{{ client: client.description }}"/>

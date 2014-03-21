@@ -10,39 +10,39 @@ info:
         Работая с Вами мы рассчитываем на долгосрочное взаимовыгодное сотрудничество, поэтому готовы предоставлять лояльные цены, большие скидки и всевозможные бонусы.
 
 clients:
-  - images:
-    - image: images/themeforest-light.png
-      link: #
-      description: ...
+  - slide:
+      - image: images/themeforest-light.png
+        link: #
+        description: ...
 
-    - image: images/graphicriver-light.png
-      link: #
-      description: ...
+      - image: images/graphicriver-light.png
+        link: #
+        description: ...
 
-    - image: images/activeden-light.png
-      link: #
-      description: ...
+      - image: images/activeden-light.png
+        link: #
+        description: ...
 
-    - image: images/photodune-light.png
-      link: #
-      description: ...
+      - image: images/photodune-light.png
+        link: #
+        description: ...
 
-  - images:
-    - image: images/themeforest-light.png
-      link: #
-      description: ...
+  - slide:
+      - image: images/themeforest-light.png
+        link: #
+        description: ...
 
-    - image: images/graphicriver-light.png
-      link: #
-      description: ...
+      - image: images/graphicriver-light.png
+        link: #
+        description: ...
 
-    - image: images/activeden-light.png
-      link: #
-      description: ...
+      - image: images/activeden-light.png
+        link: #
+        description: ...
 
-    - image: images/photodune-light.png
-      link: #
-      description: ...
+      - image: images/photodune-light.png
+        link: #
+        description: ...
 
 slides:
   - image: images/home_slider_1.png

@@ -64,6 +64,33 @@
             self.options(options);
         }
     });
+
+    self.checkedOptions = ko.observableArray([]);
+
+    self.totalSum = ko.computed(function(){
+        var copyCount = self.selectedCopyCount();
+        var options = self.checkedOptions();
+
+        if(copyCount){
+            var total = copyCount.price;
+
+            for(var i = 0; i < options.length; i++){
+                var option = options[i];
+
+                for(var ii = 0; ii < option.prices.length; ++ii){
+                    var price = option.prices[ii];
+
+                    if(price[0] == copyCount.value){
+                        total += price[1];
+                    }
+                }
+            }
+
+            return total;
+        }
+
+        return 0;
+    });
   };
 
   global.bindPriceList = function(data){
