@@ -982,7 +982,7 @@ prices_for_offset:
                 copyCount: [[1, 80], [2, 160], [3, 240]] 
 
 
-- name: Блокноты
+  - name: Блокноты
 
     formats:
 
@@ -1033,14 +1033,12 @@ prices_for_offset:
                     prices: [[30, 1426], [50, 1608], [100, 2116], [150, 2662], [200, 3096], [300, 4285], [400, 5143], [500, 6093], [600, 6994], [700, 7905], [800, 8836], [900, 9705], [1000, 10635]]
 
 
-
-
-- name: Меню
+  - name: Меню
 
     formats:
 
       - name: А5 на пружине 
- 
+
         chromaticities:
           - name: Одностороняя
             paper_types:
@@ -1058,7 +1056,7 @@ prices_for_offset:
                     prices: [[5, 377], [10, 443], [15, 509], [20, 587], [25, 653], [30, 729], [35, 800],[40, 873], [45, 944], [50, 1015]]    
 
       - name: А4 на пружине 
- 
+
         chromaticities:
           - name: Одностороняя
             paper_types:
@@ -1077,7 +1075,7 @@ prices_for_offset:
 
 
 
-- name: Кубарики
+  - name: Кубарики
 
     formats:
 
@@ -1089,7 +1087,7 @@ prices_for_offset:
               - name: 80 гр/м 
                 copyCount: [[1000, 75]] 
 
-- name: Сеты
+  - name: Сеты
 
     formats:
 
@@ -1102,7 +1100,7 @@ prices_for_offset:
                 copyCount: [[1000, 820], [2000, 1260], [5000, 1930], [10000, 3030]] 
 
 
-                
+
 
 
 prices_for_souvenir:
