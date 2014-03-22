@@ -24,7 +24,7 @@ layout: default
 
 <div class="price-selects row-fluid">
   <div class="span2">
-    <select data-bind="value: selectedItem, options: items, optionsText: 'name', optionsCaption: 'Выберите тип...'">
+    <select data-bind="value: selectedItem, options: items, optionsText: 'name', optionsValue: 'name', optionsCaption: 'Выберите тип...', fancySelect: {}">
     </select>
   </div>
 
@@ -115,7 +115,10 @@ layout: default
   <div class="span2">Стоимость</div>
 </div>
 
+<link href="css/fancySelect.css" rel="stylesheet" type="text/css" media="screen" />
+
 <script src="js/knockout-3.1.0.js"></script>
+<script src="js/fancySelect.js"></script>
 <script src="js/price-list.js"></script>
 
 <script>
