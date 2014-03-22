@@ -1,10 +1,18 @@
 ko.bindingHandlers.fancySelect = {
     init: function(element, valueAccessor, allBindingsAccessor){
         var obj = valueAccessor();
+        var binds = allBindingsAccessor();
 
         setTimeout(function(){
-            $(element).fancySelect(obj);
-        }, 10);
+            $(element).fancySelect(obj).on('change.fs', function(){
+                var options = allBindingsAccessor().options();
+
+                for(var i = 0; i < options.length; ++i){
+                    if(options[i][binds.optionsValue] == jQuery(this).val())
+                        binds.value(options[i]);
+                }
+            });
+        }, 1);
     },
 
     update: function(element){
