@@ -1,22 +1,23 @@
 ko.bindingHandlers.fancySelect = {
     init: function(element, valueAccessor, allBindingsAccessor){
         var obj = valueAccessor();
-        var binds = allBindingsAccessor();
 
         setTimeout(function(){
-            $(element).fancySelect(obj).on('change.fs', function(){
+            $(element).fancySelect({}).on('change.fs', function(){
+                var binds = allBindingsAccessor();
                 var options = allBindingsAccessor().options();
+                var value = jQuery(this).val();
 
-                for(var i = 0; i < options.length; ++i){
-                    if(options[i][binds.optionsValue] == jQuery(this).val())
-                        binds.value(options[i]);
+                if(options){
+                    for(var i = 0; i < options.length; ++i){
+                        if(options[i][binds.optionsValue] == value){
+                            obj(options[i]);
+                            $('select').trigger('update.fs');
+                        }
+                    }
                 }
             });
         }, 1);
-    },
-
-    update: function(element){
-        $(element).trigger('change');
     }
 };
 
@@ -37,23 +38,36 @@ ko.bindingHandlers.fancySelect = {
                 self.formats(value.formats);
             else {
                 self.selectedFormat(null);
+                self.selectedChromaticite(null);
+                self.selectedPaperType(null);
                 self.selectedCopyCount(null);
             }
         });
 
         self.selectedFormat = ko.observable();
         self.selectedFormat.subscribe(function(value){
-            if(value) self.chromaticities(value.chromaticities);
+            if(value)
+                self.chromaticities(value.chromaticities);
+            else {
+                self.selectedChromaticite(null);
+                self.selectedPaperType(null);
+                self.selectedCopyCount(null);
+            }
         });
 
         self.selectedChromaticite = ko.observable();
         self.selectedChromaticite.subscribe(function(value){
-            if(value) self.paperTypes(value.paper_types);
+            if(value)
+                self.paperTypes(value.paper_types);
+            else {
+                self.selectedPaperType(null);
+                self.selectedCopyCount(null);
+            }
         });
 
         self.selectedPaperType = ko.observable();
         self.selectedPaperType.subscribe(function(value){
-            if(value){
+            if(value && value.copyCount){
                 var data = [];
 
                 for(var i = 0; i < value.copyCount.length; ++i){
@@ -61,12 +75,14 @@ ko.bindingHandlers.fancySelect = {
                 }
 
                 self.copyCounts(data);  
+            } else {
+                self.selectedCopyCount(null);
             }
         });
 
         self.selectedCopyCount = ko.observable();
         self.selectedCopyCount.subscribe(function(value){
-            var allOptions = self.selectedPaperType().options;
+            var allOptions = self.selectedPaperType() ? self.selectedPaperType().options : null;
 
             if(value && allOptions){
                 var options = [];

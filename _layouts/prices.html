@@ -24,34 +24,34 @@ layout: default
 
 <div class="price-selects row-fluid">
   <div class="span2">
-    <select data-bind="value: selectedItem, options: items, optionsText: 'name', optionsValue: 'name', optionsCaption: 'Выберите тип...', fancySelect: {}">
+    <select data-bind="options: items, optionsText: 'name', optionsValue: 'name', optionsCaption: 'Выберите тип...', fancySelect: selectedItem">
     </select>
   </div>
 
   <div class="span2">
-    <span data-bind="if: selectedItem()">
-      <select data-bind="value: selectedFormat, options: formats, optionsText: 'name', optionsCaption: 'Выберите формат...', fancySelect: {}, optionsValue: 'name'">
+    <span data-bind="if: selectedItem">
+      <select data-bind="options: formats, optionsText: 'name', optionsCaption: 'Выберите формат...', optionsValue: 'name', fancySelect: selectedFormat">
       </select>
     </span>
   </div>
 
   <div class="span2">
     <span data-bind="if: selectedFormat">
-      <select data-bind="value: selectedChromaticite, options: chromaticities, optionsText: 'name', optionsCaption: 'Цветность...', fancySelect: {}, optionsValue: 'name'">
+      <select data-bind="options: chromaticities, optionsText: 'name', optionsCaption: 'Цветность...', fancySelect: selectedChromaticite, optionsValue: 'name'">
       </select>
     </span>
   </div>
 
   <div class="span2">
     <span data-bind="if: selectedChromaticite">
-      <select data-bind="value: selectedPaperType, options: paperTypes, optionsText: 'name', optionsCaption: 'Тип бумаги...', fancySelect: {}, optionsValue: 'name'">
+      <select data-bind="options: paperTypes, optionsText: 'name', optionsCaption: 'Тип бумаги...', fancySelect: selectedPaperType, optionsValue: 'name'">
       </select>
     </span>
   </div>
 
   <div class="span2">
     <span data-bind="if: selectedPaperType">
-      <select data-bind="value: selectedCopyCount, options: copyCounts, optionsText: 'value', optionsCaption: 'Выберите тираж...', fancySelect: {}, optionsValue: 'value'">
+      <select data-bind="options: copyCounts, optionsText: 'value', optionsCaption: 'Выберите тираж...', fancySelect: selectedCopyCount, optionsValue: 'value'">
       </select>
     </span>
     <span data-bind="if: options().length > 0">
