@@ -106,7 +106,8 @@ height: 360px;
     position: relative;
 }
 .hs_creative_info {
-	margin-top: 5px;
+  text-indent: 20px;
+  font-size: 14px;
 }
 .hs_top_sixty {
 	margin-top: 60px;
