@@ -2,7 +2,7 @@ div.fancy-select {
 	position: relative;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 12px;
 	color: #46565D;
 }
 
@@ -26,11 +26,9 @@ div.fancy-select div.trigger {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	position: relative;
-	background: #99A5BE;
 	border: 1px solid #99A5BE;
 	border-top-color: #A5B2CB;
 	color: #4B5468;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
 	transition: all 240ms ease-out;
 	-webkit-transition: all 240ms ease-out;
@@ -47,15 +45,13 @@ div.fancy-select div.trigger:after {
 	height: 0;
 	border: 5px solid transparent;
 	border-top-color: #4B5468;
-	top: 20px;
+	top: 15px;
 	right: 9px;
 }
 
 div.fancy-select div.trigger.open {
-	background: #4A5368;
 	border: 1px solid #475062;
 	color: #7A8498;
-	box-shadow: none;
 }
 
 div.fancy-select div.trigger.open:after {
@@ -121,13 +117,13 @@ div.fancy-select ul.options.overflowing.open {
 }
 
 div.fancy-select ul.options li {
-	background: #62C8BF;
   margin: 3px 0;
   border-radius: 5px;
-	padding: 8px 12px;
-	color: #2B8686;
+	padding: 4px 8px;
+	color: #000;
 	cursor: pointer;
 	white-space: nowrap;
+	border: 1px solid #ccc;
 
 	transition: all 150ms ease-out;
 	-webkit-transition: all 150ms ease-out;
@@ -136,11 +132,11 @@ div.fancy-select ul.options li {
 	-o-transition: all 150ms ease-out;
 }
 
-div.fancy-select ul.options li.selected {
+div.fancy-select ul.options li.selected, div.fancy-select ul.options li:hover {
 	background: #9c1111;
 	color: rgba(255,255,255,0.75);
 }
 
 div.fancy-select ul.options li.hover {
-	color: #fff;
+	
 }

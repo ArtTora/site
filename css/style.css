@@ -1839,6 +1839,14 @@ iframe {
   cursor: pointer;
 }
 
+.price-selects .price {
+	font-size: 20px;
+}
+
+.price-selects .price-line {
+	font-size: 15px;
+}
+
 #portfoliolist {
   overflow: hidden;
   padding-bottom: 30px;

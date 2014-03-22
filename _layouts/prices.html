@@ -66,8 +66,8 @@ layout: default
 
   <div class="span2">
     <span data-bind="if: selectedCopyCount">
-      <span data-bind="if: $root.totalSum() > 0">
-        <strong data-bind="text: $root.totalSum()"></strong> грн.
+      <span data-bind="if: $root.totalSum() > 0" class="price-line">
+        <strong class="price" data-bind="text: $root.totalSum()"></strong> грн.
       </span>
 
       <span data-bind="if: $root.totalSum() == 0">
