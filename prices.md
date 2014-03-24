@@ -1310,7 +1310,7 @@ prices_for_souvenir:
 
       - name: 85Х190
         chromaticities:
-          - name:кружка хамелион (черная, синяя,  красная)     
+          - name: кружка хамелион (черная, синяя,  красная)     
 
             paper_types:
               - name: керамика
