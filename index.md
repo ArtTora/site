@@ -114,7 +114,7 @@ categories:
     tags: offset
   
   - text: Пригласительные
-    link: invitation.html
+    link: invitation.md
     image: images/latest_art_3.png
     tags: offset
 
