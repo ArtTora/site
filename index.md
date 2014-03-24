@@ -74,12 +74,12 @@ services:
 
 categories:
   - text: Визитки
-    link: cards.html
+    link: cards.md
     image: images/latest_art_1.png
     tags: offset
 
   - text: Флаера
-    link: flyers.html
+    link: flyers.md
     image: images/latest_art_2.png
     tags: offset
 
