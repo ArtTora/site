@@ -1270,7 +1270,95 @@ prices_for_offset:
 
 
 prices_for_souvenir:
-  
+
+  - name: Кружка
+
+    formats:
+      - name:  85Х190
+        chromaticities:
+          - name: белая      
+
+            paper_types:
+              - name: керамика
+                copyCount: [[1-3, 60], [3-10, 50]]
+
+
+      - name: 85Х190
+        chromaticities:
+          - name: цветная внутри, цветная снаружи     
+
+            paper_types:
+              - name: керамика
+                copyCount: [[1-3, 70], [3-10, 60]]
+ 
+
+      - name: 85Х190
+        chromaticities:
+          - name: стекло, матовое стекло
+            paper_types:
+              - name: стекло
+                copyCount: [[1-3, 70], [3-10, 60]]
+   
+      - name: 85Х190 
+        chromaticities:
+          - name: детская(дельфин,зебра,свинка,тигр...)      
+
+            paper_types:
+              - name: керамика
+                copyCount: [[1-3, 85], [3-10, 75]]
+
+
+      - name: 85Х190
+        chromaticities:
+          - name:кружка хамелион (черная, синяя,  красная)     
+
+            paper_types:
+              - name: керамика
+                copyCount: [[1-3, 85], [3-10, 75]]   
+
+
+
+      - name: 
+        chromaticities:
+          - name: Бокал пивной   
+
+            paper_types:
+              - name: керамика, стекло матовое 
+                copyCount: [[1-3, 120], [3-10, 110]] 
+
+  - name: Пазл
+
+    formats:
+      - name: А3 большой
+        chromaticities:
+          - name: Одосторонняя    
+
+            paper_types:
+              - name: картон с Уф покрытием
+                copyCount: [[1-3, 110], [3-10, 100]]
+
+
+
+      - name: А4
+        chromaticities:
+          - name: Одностороняя   
+
+            paper_types:
+              - name: картон с Уф покрытием
+                copyCount: [[1-3, 55], [3-10, 50]]
+
+
+  - name: Фотокамень
+
+    formats:
+      - name: А3 большой
+        chromaticities:
+          - name: Одосторонняя    
+
+            paper_types:
+              - name: картон с Уф покрытием
+                copyCount: [[1-3, 110], [3-10, 100]]                
+    
 ---
 
 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
