@@ -114,7 +114,7 @@ categories:
     tags: offset
   
   - text: Пригласительные
-    link: invitations.md
+    link: invitation.html
     image: images/latest_art_3.png
     tags: offset
 
@@ -124,7 +124,7 @@ categories:
     tags: offset 
 
   - text: Календари
-    link: calendars.md
+    link: calendars.html
     image: images/latest_art_5.png
     tags: offset
 
