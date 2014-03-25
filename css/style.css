@@ -1811,6 +1811,15 @@ iframe {
 .page-content p {
 }
 
+.page-content ul {
+	padding-left: 40px;
+}
+
+.page-content ul, .page-content li {
+	list-style: disc;
+	margin: 20px 0;
+}
+
 .hs_main_latest a {
 	font-family: 'Marck Script', cursive;
 	font-size: 28px;

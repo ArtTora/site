@@ -44,6 +44,8 @@ clients:
         link: #
         description: ...
 
+slides_in_header: true
+
 slides:
   - image: images/home_slider_1.png
     description: Image description
