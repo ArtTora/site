@@ -11,6 +11,7 @@ slides:
   - image: images/home_slider_2.png
     description: Image description
 
+
 ---
 
 

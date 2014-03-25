@@ -240,7 +240,7 @@ categories:
     image: images/obemnie_bykvi.png
     tags: outdoor
 
-  - text: Крышная установка
+  - text: Накрышная установка
     link: roof_unit.html
     image: images/obemnie_bykvi.png
     tags: outdoor
@@ -261,7 +261,7 @@ categories:
     tags: outdoor
 
   - text: Таблички
-    link: plates.html
+    link: tabl.html
     image: images/latest_art_3.png
     tags: outdoor
 

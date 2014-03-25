@@ -3,6 +3,17 @@ layout: page
 title: Пластиковые карты
 description:
 keywords:
+
+
+slides_in_footer: true
+
+slides:
+  - image: images/home_slider_1.png
+    description: Image description
+
+  - image: images/home_slider_2.png
+    description: Image description
+
 ---
 
 **Пластиковые карты** – это некая пластиковая пластина с размером 54х86х0,76 мм. Использование пластиковых карт автоматически поднимает авторитет организации в деловом обществе. Пластиковые карты долговечные по сравнению с картонными карточками, универсальные и более привлекательные.

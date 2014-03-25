@@ -3,6 +3,17 @@ layout: page
 title: Подушка, наволочка
 description:
 keywords:
+
+
+slides_in_footer: true
+
+slides:
+  - image: images/home_slider_1.png
+    description: Image description
+
+  - image: images/home_slider_2.png
+    description: Image description
+
 ---
 
 **Подушка** является универсальным, практичным и недорогим подарком. Наполнение подушек - синтапон. Такие подушки не вызывают аллергии, ничем не пахнут, в них не заводятся клещи. Такие подушки можно стирать прямо в стиральной машине, и их не нужно для этого распарывать.

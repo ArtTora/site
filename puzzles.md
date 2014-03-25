@@ -3,6 +3,17 @@ layout: page
 title: Пазлы
 description:
 keywords:
+
+
+slides_in_footer: true
+
+slides:
+  - image: images/home_slider_1.png
+    description: Image description
+
+  - image: images/home_slider_2.png
+    description: Image description
+
 ---
 
 **Детские пазлы** – это отличная игрушка, предназначенная для развития логики и мелкой моторики ребёнка. Играя в пазлы, ребёнок не только получает удовольствие от встречи с героями любимых мультфильмов, но и знакомится с новыми цветами и оттенками, развивает мелкую моторику рук.
