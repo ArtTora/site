@@ -9,7 +9,7 @@
             items = [];
 
             for(var i = 0; i < item.copyCount.length; ++i){
-                items.push({ name: item.copyCount[i][0] });
+                items.push({ name: item.copyCount[i][0], value: item.copyCount[i][1] });
             }
         }
 
@@ -26,12 +26,12 @@
                 var price = option.prices[ii];
 
                 if(price[0] == value){
-                    result.push(option);
+                    result.push({ name: option.name, value: price[1] });
                 }
             }
         }
 
-        return options;
+        return result;
     };
 
     var buildSelect = function(list){
@@ -49,14 +49,26 @@
         return jQuery(items + '</select>');
     };
 
-    var options = function(list, parentContainter){
-        var items = '';
+    var options = function(list, parentContainter, callback){
+        var items = jQuery('<div/>').appendTo(parentContainter);
 
         jQuery.each(list, function(index, item){
-            items += '<input type="checkbox" /> ' + item.name;
-        });
+            var itemEl = jQuery('<div />').appendTo(items);
+            var checkbox = jQuery('<input />', { type: 'checkbox', value: item.value }).appendTo(itemEl);
+            var label = jQuery('<label />').text(item.name).appendTo(itemEl);
 
-        parentContainter.append(items);
+            checkbox.change(function(){
+                var sum = 0;
+
+                items.find('input').each(function(){
+                    if(jQuery(this).prop('checked')){
+                        sum += parseInt(jQuery(this).val());
+                    }
+                });
+
+                callback(sum);
+            });
+        });
     };
 
     var step = function(list, parentContainter){
@@ -64,8 +76,10 @@
         var selectContainer = jQuery('<div />', { class: 'input' }).appendTo(container);
         var nextStepContainer = jQuery('<div />', { class: 'next-step' }).appendTo(container);
         var currentOptionsContainer = jQuery('<div />', { class: 'current-options' }).appendTo(container);
+        var resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
         var select = buildSelect(list);
-        var nextStep, currentOptions;
+        var nextStep;
+        var result = 0;
 
         if(select){
             selectContainer.append(select);
@@ -83,11 +97,13 @@
                     items.parent = currentItem;
                     nextStep = step(items, nextStepContainer);
                 } else {
-                    console.log('result');
+                    resultContainer.html(currentItem.value);
                 }
 
                 if(list.parent && list.parent.options){
-                    currentOptions = options(getOptions(currentItem.name, list.parent.options), currentOptionsContainer);
+                    options(getOptions(currentItem.name, list.parent.options), currentOptionsContainer, function(sum){
+                        resultContainer.html(currentItem.value + sum);
+                    });
                 }
             });
         }
