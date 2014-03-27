@@ -1,6 +1,6 @@
 (function(global){
     var allDate = {};
-    var itemNames = ['formats', 'chromaticities', 'paper_types'];
+    var itemNames = ['formats', 'chromaticities', 'paper_types', 'items'];
 
     var getItems = function(item){
         var items = item.formats || item.chromaticities || item.paper_types;
