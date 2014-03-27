@@ -22,60 +22,7 @@ layout: default
   <div class="span2">Стоимость</div>
 </div>
 
-<div class="price-selects row-fluid">
-  <div class="span2">
-    <select data-bind="options: items, optionsText: 'name', optionsValue: 'name', optionsCaption: 'Выберите тип...', fancySelect: selectedItem">
-    </select>
-  </div>
-
-  <div class="span2">
-    <span data-bind="if: selectedItem">
-      <select data-bind="options: formats, optionsText: 'name', optionsCaption: 'Выберите формат...', optionsValue: 'name', fancySelect: selectedFormat">
-      </select>
-    </span>
-  </div>
-
-  <div class="span2">
-    <span data-bind="if: selectedFormat">
-      <select data-bind="options: chromaticities, optionsText: 'name', optionsCaption: 'Цветность...', fancySelect: selectedChromaticite, optionsValue: 'name'">
-      </select>
-    </span>
-  </div>
-
-  <div class="span2">
-    <span data-bind="if: selectedChromaticite">
-      <select data-bind="options: paperTypes, optionsText: 'name', optionsCaption: 'Тип бумаги...', fancySelect: selectedPaperType, optionsValue: 'name'">
-      </select>
-    </span>
-  </div>
-
-  <div class="span2">
-    <span data-bind="if: selectedPaperType">
-      <select data-bind="options: copyCounts, optionsText: 'value', optionsCaption: 'Выберите тираж...', fancySelect: selectedCopyCount, optionsValue: 'value'">
-      </select>
-    </span>
-    <span data-bind="if: options().length > 0">
-      <div data-bind="foreach: options">
-        <div class="items">
-          <input type="checkbox" data-bind="checked: $root.checkedOptions, checkedValue: $data">
-          <span data-bind="text: name"></span>
-        </div>
-      </div>
-    </span>
-  </div>
-
-  <div class="span2">
-    <span data-bind="if: selectedCopyCount">
-      <span data-bind="if: $root.totalSum() > 0" class="price-line">
-        <strong class="price" data-bind="text: $root.totalSum()"></strong> грн.
-      </span>
-
-      <span data-bind="if: $root.totalSum() == 0">
-        Так мы не может :]
-      </span>
-    </span>
-  </div>
-</div>
+<div class="offset-container"></div>
 
 <div class="row-fluid">
   <div class="span12">
@@ -97,6 +44,8 @@ layout: default
   <div class="span2">Стоимость</div>
 </div>
 
+<div class="souvenir-container"></div>
+
 <div class="row-fluid">
   <div class="span12">
     <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
@@ -115,14 +64,17 @@ layout: default
   <div class="span2">Стоимость</div>
 </div>
 
+<div class="large-container"></div>
+
 <link href="css/fancySelect.css" rel="stylesheet" type="text/css" media="screen" />
 
-<script src="js/knockout-3.1.0.js"></script>
 <script src="js/fancySelect.js"></script>
 <script src="js/price-list.js"></script>
 
 <script>
-  bindPriceList({{ page.prices_for_offset | jsonify }});
+  {% for item in site.data %}
+    bindPriceList('{{ item[0] }}', {{ item[1] | jsonify }});
+  {% endfor %}
 </script>
 
 <div class="row-fluid">

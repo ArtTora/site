@@ -1,0 +1,88 @@
+- name: Кружка
+
+  formats:
+    - name:  85Х190
+      chromaticities:
+        - name: белая      
+
+          paper_types:
+            - name: керамика
+              copyCount: [[1-3, 60], [3-10, 50]]
+
+
+    - name: 85Х190
+      chromaticities:
+        - name: цветная внутри, цветная снаружи     
+
+          paper_types:
+            - name: керамика
+              copyCount: [[1-3, 70], [3-10, 60]]
+
+
+    - name: 85Х190
+      chromaticities:
+        - name: стекло, матовое стекло
+          paper_types:
+            - name: стекло
+              copyCount: [[1-3, 70], [3-10, 60]]
+ 
+    - name: 85Х190 
+      chromaticities:
+        - name: детская(дельфин,зебра,свинка,тигр...)      
+
+          paper_types:
+            - name: керамика
+              copyCount: [[1-3, 85], [3-10, 75]]
+
+
+    - name: 85Х190
+      chromaticities:
+        - name: кружка хамелион (черная, синяя,  красная)     
+
+          paper_types:
+            - name: керамика
+              copyCount: [[1-3, 85], [3-10, 75]]   
+
+
+
+    - name: 
+      chromaticities:
+        - name: Бокал пивной   
+
+          paper_types:
+            - name: керамика, стекло матовое 
+              copyCount: [[1-3, 120], [3-10, 110]] 
+
+- name: Пазл
+
+  formats:
+    - name: А3 большой
+      chromaticities:
+        - name: Одосторонняя    
+
+          paper_types:
+            - name: картон с Уф покрытием
+              copyCount: [[1-3, 110], [3-10, 100]]
+
+
+
+    - name: А4
+      chromaticities:
+        - name: Одностороняя   
+
+          paper_types:
+            - name: картон с Уф покрытием
+              copyCount: [[1-3, 55], [3-10, 50]]
+
+
+- name: Фотокамень
+
+  formats:
+    - name: А3 большой
+      chromaticities:
+        - name: Одосторонняя    
+
+          paper_types:
+            - name: картон с Уф покрытием
+              copyCount: [[1-3, 110], [3-10, 100]]                
+
