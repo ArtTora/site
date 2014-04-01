@@ -47,7 +47,7 @@ clients:
 slides_in_header: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/slaid.png
     description: Image description
 
   - image: images/home_slider_2.png
