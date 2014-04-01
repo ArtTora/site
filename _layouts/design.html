@@ -1,0 +1,37 @@
+---
+layout: page
+---
+
+<br>
+
+<table class="table">
+  <tr>
+    {% for item in page.header %}
+      <th style="{% if forloop.index == 1 %}border: 0; {% endif %} text-align: center; background: #{{ item.color }}; {% if item.width %}width: {{ item.width }}px{% endif %}">{{ item.name }}</th>
+    {% endfor %}
+  </tr>
+
+  {% for item in page.table %}
+    <tr>
+      <td>{{ item.name }}</td>
+
+      {% for price in item.prices %}
+        <td style="line-height: 30px; text-align: center; background: #{{ page.header[forloop.index].color }}">
+          <div style="background: #fff; opacity: 0.8; border-radius: 5px">
+            {{ price }}
+          </div>
+        </td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+
+<br>
+
+{% for item in page.header %}
+  {% if item.description %}
+    <p><span style="background: #{{ item.color }}; display: inline-block; padding: 3px 10px; border-radius: 5px">{{ item.name }}</span> - {{ item.description }}</p>
+  {% endif %}
+{% endfor %}
+
+{{ content }}
