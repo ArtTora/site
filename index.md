@@ -147,62 +147,62 @@ categories:
 
   - text: Чашка
     link: caps.html
-    image: images/obemnie_bykvi.png
+    image: images/chashka.png
     tags: souvenir
 
   - text: Тарелка
     link: plate.html
-    image: images/obemnie_bykvi.png
+    image: images/tarelka.png
     tags: souvenir
 
   - text: Камень
     link: stone.html
-    image: images/obemnie_bykvi.png
+    image: images/kamen.png
     tags: souvenir
 
   - text: Ручка
     link: pen.html
-    image: images/obemnie_bykvi.png
+    image: images/rychki.png
     tags: souvenir
 
   - text: Брелок
     link: trinket.html
-    image: images/obemnie_bykvi.png
+    image: images/brelok.png
     tags: souvenir
 
   - text: Пакет
     link: packet.html
-    image: images/obemnie_bykvi.png
+    image: images/paket.png
     tags: souvenir
 
   - text: Магнит
     link: magnet.html
-    image: images/obemnie_bykvi.png
+    image: images/magnit.png
     tags: souvenir
 
   - text: Пазлы
     link: puzzles.html
-    image: images/obemnie_bykvi.png
+    image: images/pazli.png
     tags: souvenir
 
   - text: Подушка, Наволочка
     link: pillow_pillowcase.html
-    image: images/obemnie_bykvi.png
+    image: images/podyshka.png
     tags: souvenir
 
   - text: Коврик (для мыши)
     link: mousepad.html
-    image: images/obemnie_bykvi.png
+    image: images/kovrik.png
     tags: souvenir
 
   - text: Баннер
     link: banner.html
-    image: images/latest_art_1.png
+    image: images/baner.png
     tags: large
 
   - text: Оракал
     link: oracal.html
-    image: images/latest_art_2.png
+    image: images/oracal.png
     tags: large
 
   - text: Сетка Mesh
