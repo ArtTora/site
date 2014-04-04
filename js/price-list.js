@@ -2,6 +2,13 @@
     var allDate = {};
     var itemNames = ['formats', 'chromaticities', 'paper_types', 'items'];
 
+    var labels = {
+        offset: {
+            header: ['Тип', 'Формат', 'Цветность', 'Тип бумаги', 'Тираж', 'Стоимость'],
+            blanks: ['Выберите тип', 'Выберите формат', 'Выберите цветность', 'Выберите тип бумаги', 'Выберите тираж', 'Выберите стоимость']
+        }
+    };
+
     var getItems = function(item){
         var items = item.formats || item.chromaticities || item.paper_types;
 
@@ -71,8 +78,11 @@
         });
     };
 
-    var step = function(list, parentContainter){
+    var step = function(list, parentContainter, index){
+        index = index || 0;
+
         var container = jQuery('<div />', { class: 'step' }).appendTo(parentContainter);
+        var headerContainer = jQuery('<div />', { class: 'header' }).appendTo(container);
         var selectContainer = jQuery('<div />', { class: 'input' }).appendTo(container);
         var nextStepContainer = jQuery('<div />', { class: 'next-step' }).appendTo(container);
         var currentOptionsContainer = jQuery('<div />', { class: 'current-options' }).appendTo(container);
@@ -82,6 +92,8 @@
         var result = 0;
 
         if(select){
+            headerContainer.html(labels.offset.header[index]);
+
             selectContainer.append(select);
             select.change(function(){
                 nextStepContainer.empty();
@@ -95,7 +107,7 @@
 
                 if(items){
                     items.parent = currentItem;
-                    nextStep = step(items, nextStepContainer);
+                    nextStep = step(items, nextStepContainer, index + 1);
                 } else {
                     resultContainer.html(currentItem.value);
                 }
