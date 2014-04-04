@@ -61,6 +61,10 @@
 
 //On Blur On Focus  
 $(document).ready(function() {
+  BackToTop({
+    text : 'Наверх страницы'
+  });
+
     $('a.hint').tooltip({ html: true, placement: 'right' });
 
   //bx Slider 

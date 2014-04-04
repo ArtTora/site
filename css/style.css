@@ -1912,3 +1912,7 @@ iframe {
 .tooltip ul {
   margin: 10px 0
 }
+
+#BackToTop {
+  z-index: 9999;
+}
