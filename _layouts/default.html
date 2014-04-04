@@ -74,7 +74,7 @@ menu:
     </div>
   </div>
 
-  {% if page.slides %}
+  {% if page.slides and page.slides_in_header %}
   <div class="row-fluid">
     <div class="span12 hs_main_slider"> 
       <div id="myCarousel" class="carousel slide">
@@ -103,6 +103,26 @@ menu:
       <div class="span11">
         <div class="span12 hs_left hs_creative_info"> {{ page.info.text }} </div>
       </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.slides and page.slides_in_footer %}
+  <div class="row-fluid">
+    <div class="span12 hs_main_slider"> 
+      <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="hs_slider_mask">
+          <div class="carousel-inner">
+            {% for item in page.slides %}
+            <div class="{% if forloop.first %}active{% endif %} item"> <img src="{{ item.image }}" class="slider_mask" alt="{{ item.description }}"/></div>
+            {% endfor %}
+          </div>
+        </div>
+        <a class="carousel-control left" href="index.html#myCarousel" data-slide="prev"></a> <a class="carousel-control right" href="index.html#myCarousel" data-slide="next"></a> </div>
     </div>
   </div>
   {% endif %}

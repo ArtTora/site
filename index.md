@@ -6,7 +6,7 @@ keywords: ...
 
 info:
   title: О нас
-  text: Мы профессионалы своего дела работающие с полиграфической продукцией высшего качества, имея в своём распоряжении лучшее оборудование способное решить самые сложные задачи в кротчайшие сроки.
+  text:  Мы профессионалы своего дела работающие с полиграфической продукцией высшего качества, имея в своём распоряжении лучшее оборудование способное решить самые сложные задачи в кротчайшие сроки.
         Работая с Вами мы рассчитываем на долгосрочное взаимовыгодное сотрудничество, поэтому готовы предоставлять лояльные цены, большие скидки и всевозможные бонусы.
 
 clients:
@@ -44,8 +44,10 @@ clients:
         link: #
         description: ...
 
+slides_in_header: true
+
 slides:
-  - image: images/home_slider_1.png
+  - image: images/slaid.png
     description: Image description
 
   - image: images/home_slider_2.png
@@ -145,137 +147,137 @@ categories:
 
   - text: Чашка
     link: caps.html
-    image: images/obemnie_bykvi.png
+    image: images/chashka.png
     tags: souvenir
 
   - text: Тарелка
     link: plate.html
-    image: images/obemnie_bykvi.png
+    image: images/tarelka.png
     tags: souvenir
 
   - text: Камень
     link: stone.html
-    image: images/obemnie_bykvi.png
+    image: images/kamen.png
     tags: souvenir
 
   - text: Ручка
     link: pen.html
-    image: images/obemnie_bykvi.png
+    image: images/rychki.png
     tags: souvenir
 
   - text: Брелок
     link: trinket.html
-    image: images/obemnie_bykvi.png
+    image: images/brelok.png
     tags: souvenir
 
   - text: Пакет
     link: packet.html
-    image: images/obemnie_bykvi.png
+    image: images/paket.png
     tags: souvenir
 
   - text: Магнит
     link: magnet.html
-    image: images/obemnie_bykvi.png
+    image: images/magnit.png
     tags: souvenir
 
   - text: Пазлы
     link: puzzles.html
-    image: images/obemnie_bykvi.png
+    image: images/pazli.png
     tags: souvenir
 
   - text: Подушка, Наволочка
     link: pillow_pillowcase.html
-    image: images/obemnie_bykvi.png
+    image: images/podyshka.png
     tags: souvenir
 
   - text: Коврик (для мыши)
     link: mousepad.html
-    image: images/obemnie_bykvi.png
+    image: images/kovrik.png
     tags: souvenir
 
   - text: Баннер
     link: banner.html
-    image: images/latest_art_1.png
+    image: images/baner.png
     tags: large
 
   - text: Оракал
     link: oracal.html
-    image: images/latest_art_2.png
+    image: images/oracal.png
     tags: large
 
   - text: Сетка Mesh
     link: mesh.html
-    image: images/latest_art_3.png
+    image: images/mesh.png
     tags: large
 
   - text: One Way Vision
     link: one_vision.html
-    image: images/latest_art_4.png
+    image: images/one-way-vision.png
     tags: large
 
   - text: Холст
     link: holst.html
-    image: images/latest_art_5.png
+    image: images/holst.png
     tags: large
 
   - text: Флаг
     link: flag.html
-    image: images/latest_art_6.png
+    image: images/flag.png
     tags: large
 
   - text: Штендер
     link: shtender.html
-    image: images/obemnie_bykvi.png
+    image: images/shtender.png
     tags: outdoor
 
   - text: Объемные буквы
     link: large_letters.html
-    image: images/obemnie_bykvi.png
+    image: images/large_letters.png
     tags: outdoor
 
   - text: Световой короб
     link: light_box.html
-    image: images/obemnie_bykvi.png
+    image: images/svet_korob.png
     tags: outdoor
 
-  - text: Крышная установка
+  - text: Накрышная установка
     link: roof_unit.html
-    image: images/obemnie_bykvi.png
+    image: images/roof_unit.png
     tags: outdoor
 
   - text: Композит
     link: compo.html
-    image: images/obemnie_bykvi.png
+    image: images/kompozit.png
     tags: outdoor
 
   - text: Стенд
     link: stand.html
-    image: images/latest_art_1.png
+    image: images/stand.png
     tags: outdoor
 
   - text: Стелла
     link:  stella.html
-    image: images/latest_art_2.png
+    image: images/stela.png
     tags: outdoor
 
   - text: Таблички
-    link: plates.html
-    image: images/latest_art_3.png
+    link: tabl.html
+    image: images/tablichki.png
     tags: outdoor
 
   - text: Вывески
     link: signs.html
-    image: images/latest_art_4.png
+    image: images/viviska.png
     tags: outdoor
 
   - text: Брэндмауэр
     link: firewall.html
-    image: images/latest_art_5.png
+    image: images/branmayer.png
     tags: outdoor
 
   - text: Кронштейн
     link: kronshtein.html
-    image: images/latest_art_6.png
+    image: images/kronshtein.png
     tags: outdoor
 
 

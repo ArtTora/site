@@ -3,6 +3,17 @@ layout: page
 title: Блокноты
 description:
 keywords:
+
+
+slides_in_footer: true
+
+slides:
+  - image: images/home_slider_1.png
+    description: Image description
+
+  - image: images/home_slider_2.png
+    description: Image description
+
 ---
 
 Блокноты с фирменной символикой могут стать не только профессиональными аксессуарами, но также оригинальными корпоративными подарками. При обеспечении должного качества печати блокнотов удается оригинально дополнить корпоративный имидж и предложить эффективное рекламное средство.

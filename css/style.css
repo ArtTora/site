@@ -1,4 +1,4 @@
-@charset "utf-8";
+
 ul {
 	margin-left: 0px;
 	list-style-image: none;
@@ -107,7 +107,7 @@ height: 360px;
 }
 .hs_creative_info {
   text-indent: 20px;
-  font-size: 14px;
+  font-size: 20px;
 }
 .hs_top_sixty {
 	margin-top: 60px;
@@ -1811,6 +1811,15 @@ iframe {
 .page-content p {
 }
 
+.page-content ul {
+	padding-left: 40px;
+}
+
+.page-content ul, .page-content li {
+	list-style: disc;
+	margin: 20px 0;
+}
+
 .hs_main_latest a {
 	font-family: 'Marck Script', cursive;
 	font-size: 28px;
@@ -1852,3 +1861,54 @@ iframe {
   padding-bottom: 30px;
 }
 
+.next-step {
+  float: left;
+}
+
+.step .input {
+  float: left;
+  margin-right: 10px;
+}
+
+.step select {
+  width: 150px;
+}
+
+.step input {
+  float: left;
+  margin-right: 10px;
+}
+
+.step .header {
+  margin: 0 0 5px 0;
+}
+
+.step .result {
+  text-align: right;
+  margin-right: -90px;
+  margin-top: 20px;
+}
+
+.step .large-options {
+  padding-left: 160px
+}
+
+.step .input-label {
+  float: left;
+  width: 80px;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 26px;
+}
+
+.tooltip-inner {
+  text-align: left;
+}
+
+.tooltip li {
+  margin: 5px 0
+}
+
+.tooltip ul {
+  margin: 10px 0
+}

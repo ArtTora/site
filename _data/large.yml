@@ -1,0 +1,30 @@
+- name: Баннер
+  resolutions:
+    - name: 360
+      price_per_unit: 75
+
+      options:
+        - name: Люверсы
+          price_per_unit: 14
+
+        - name: Прапайка
+          price_per_unit: 10
+
+        - name: Ламинирование
+          price_per_unit: 10
+
+    - name: 720
+      price_per_unit: 75
+
+      options:
+        - name: Люверсы
+          price_per_unit: 14
+
+        - name: Прапайка
+          price_per_unit: 10
+
+        - name: Ламинирование
+          price_per_unit: 10
+
+- name: Бетон
+- name: Дерево

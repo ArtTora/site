@@ -61,6 +61,7 @@
 
 //On Blur On Focus  
 $(document).ready(function() {
+    $('a.hint').tooltip({ html: true, placement: 'right' });
 
   //bx Slider 
   $(document).ready(function(e) {

@@ -3,6 +3,17 @@ layout: page
 title: Брошюры
 description:
 keywords:
+
+
+slides_in_footer: true
+
+slides:
+  - image: images/home_slider_1.png
+    description: Image description
+
+  - image: images/home_slider_2.png
+    description: Image description
+
 ---
 
 **Брошюра** — небольшая книга, обычно без твердого переплёта, в обложке. Вид рекламной 

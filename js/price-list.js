@@ -1,137 +1,234 @@
-ko.bindingHandlers.fancySelect = {
-    init: function(element, valueAccessor, allBindingsAccessor){
-        var obj = valueAccessor();
+(function(global){
+    var allDate = {};
+    var itemNames = ['formats', 'chromaticities', 'paper_types', 'items'];
+    var finishText = "Стоимость работы: {value}грн";
+
+    var labels = {
+        offset: {
+            header: ['Тип', 'Формат', 'Цветность', 'Тип бумаги', 'Тираж'],
+            blanks: ['Выберите тип', 'Выберите формат', 'Выберите цветность', 'Выберите тип бумаги', 'Выберите тираж']
+        },
+        souvenir: {
+            header: ['Продукция', 'Размер', 'Цветность', 'Материал', 'Тираж'],
+            blanks: ['Выберите продукцию', 'Выберите размер', 'Выберите цветность', 'Выберите материал', 'Выберите тираж']
+        },
+        large: {
+            header: ['Материал', 'Формат', 'Опции'],
+            blanks: ['Выберите материал', 'Выберите формат', 'Выберите опции']
+        }
+    };
+
+    var getItems = function(item){
+        var items = item.formats || item.chromaticities || item.paper_types || item.resolutions;
+
+        if(!items && item.copyCount){
+            items = [];
+
+            for(var i = 0; i < item.copyCount.length; ++i){
+                items.push({ name: item.copyCount[i][0], value: item.copyCount[i][1] });
+            }
+        }
+
+        return items;
+    };
+
+    var getOptions = function(value, options){
+        var result = [];
+
+        for(var i = 0; i < options.length; ++i){
+            var option = options[i];
+
+            for(var ii = 0; ii < option.prices.length; ++ii){
+                var price = option.prices[ii];
+
+                if(price[0] == value){
+                    result.push({ name: option.name, value: price[1] });
+                }
+            }
+        }
+
+        return result;
+    };
+
+    var buildSelect = function(list, blankText){
+        if(!jQuery.isArray(list)){
+            console.warn('Unexpected type');
+            return;
+        }
+
+        var items = '<select><option>' + blankText + '</option>';
+
+        jQuery.each(list, function(index, item){
+            items += '<option value="' + index + '">' + item.name + '</option>';
+        });
+
+        return jQuery(items + '</select>');
+    };
+
+    var buildSizeInputs = function(list, blankText){
+        var callbacks = [];
+        var element = jQuery('<div />');
+
+        var widthContainer = jQuery('<div/>').appendTo(element);
+        var heightContainer = jQuery('<div/>').appendTo(element);
+
+        widthContainer.append('<label class="input-label">Длина, м: </label>');
+        heightContainer.append('<label class="input-label">Ширина, м: </label>');
+
+        var width = jQuery('<input />', { type: 'text' }).appendTo(widthContainer);
+        var height = jQuery('<input />', { type: 'text' }).appendTo(heightContainer);
+
+        var callback = function(){
+            for(var i = 0; i < callbacks.length; ++i)
+                callbacks[i].call(element, 'sizes');
+        };
+
+        width.change(callback).keyup(callback);
+        height.change(callback).keyup(callback);
+
+        element.val = function(){
+            return {
+                width: width.val(),
+                height: height.val()
+            };
+        };
+
+        element.change = function(callback){
+            callbacks.push(callback);
+        };
 
         setTimeout(function(){
-            $(element).fancySelect({}).on('change.fs', function(){
-                var binds = allBindingsAccessor();
-                var options = allBindingsAccessor().options();
-                var value = jQuery(this).val();
-
-                if(options){
-                    for(var i = 0; i < options.length; ++i){
-                        if(options[i][binds.optionsValue] == value){
-                            obj(options[i]);
-                            $('select').trigger('update.fs');
-                        }
-                    }
-                }
-            });
+          width.val(1);
+          height.val(1);
+          callback();
         }, 1);
-    }
-};
 
-(function(global){
-    var PriceList = function(data){
-        var self = this;
+        return element;
+    };
 
-        self.items = ko.observableArray(data);
-        self.formats = ko.observableArray([]);
-        self.copyCounts = ko.observableArray([]);
-        self.chromaticities = ko.observableArray([]);
-        self.paperTypes = ko.observableArray([]);
-        self.options = ko.observableArray([]);
-
-        self.selectedItem = ko.observable();
-        self.selectedItem.subscribe(function(value){
-            if(value)
-                self.formats(value.formats);
-            else {
-                self.selectedFormat(null);
-                self.selectedChromaticite(null);
-                self.selectedPaperType(null);
-                self.selectedCopyCount(null);
-            }
-        });
-
-        self.selectedFormat = ko.observable();
-        self.selectedFormat.subscribe(function(value){
-            if(value)
-                self.chromaticities(value.chromaticities);
-            else {
-                self.selectedChromaticite(null);
-                self.selectedPaperType(null);
-                self.selectedCopyCount(null);
-            }
-        });
-
-        self.selectedChromaticite = ko.observable();
-        self.selectedChromaticite.subscribe(function(value){
-            if(value)
-                self.paperTypes(value.paper_types);
-            else {
-                self.selectedPaperType(null);
-                self.selectedCopyCount(null);
-            }
-        });
-
-        self.selectedPaperType = ko.observable();
-        self.selectedPaperType.subscribe(function(value){
-            if(value && value.copyCount){
-                var data = [];
-
-                for(var i = 0; i < value.copyCount.length; ++i){
-                    data.push({ value: value.copyCount[i][0], price: value.copyCount[i][1] });
-                }
-
-                self.copyCounts(data);  
-            } else {
-                self.selectedCopyCount(null);
-            }
-        });
-
-        self.selectedCopyCount = ko.observable();
-        self.selectedCopyCount.subscribe(function(value){
-            var allOptions = self.selectedPaperType() ? self.selectedPaperType().options : null;
-
-            if(value && allOptions){
-                var options = [];
-
-                for(var i = 0; i < allOptions.length; ++i){
-                    var option = allOptions[i];
-
-                    for(var ii = 0; ii < option.prices.length; ++ii){
-                        var price = option.prices[ii];
-
-                        if(price[0] == value.value){
-                            options.push(option);
-                        }
-                    }
-                }
-
-                self.options(options);
-            }
-        });
-
-        self.checkedOptions = ko.observableArray([]);
-
-        self.totalSum = ko.computed(function(){
-            var copyCount = self.selectedCopyCount();
-            var options = self.checkedOptions();
-
-            if(copyCount){
-                var total = copyCount.price;
-
-                for(var i = 0; i < options.length; i++){
-                    var option = options[i];
-
-                    for(var ii = 0; ii < option.prices.length; ++ii){
-                        var price = option.prices[ii];
-
-                        if(price[0] == copyCount.value){
-                            total += price[1];
-                        }
-                    }
-                }
-
-                return total;
-            }
-
+    var largeOptions = function(list, parentContainter, callback){
+      var items = jQuery('<div/>', { class: 'large-options' }).appendTo(parentContainter);
+      var onChange = function(){
+        callback(items.find('input').map(function(){
+          if(jQuery(this).prop('checked')){
+            return parseInt(jQuery(this).val());
+          } else {
             return 0;
+          }
+        }).get());
+      };
+
+      jQuery.each(list, function(index, item){
+        var itemEl = jQuery('<div />').appendTo(items);
+        var checkbox = jQuery('<input />', { type: 'checkbox', value: item.price_per_unit }).appendTo(itemEl);
+        var label = jQuery('<label />').text(item.name).appendTo(itemEl);
+
+        checkbox.change(onChange);
+      });
+    };
+
+    var options = function(list, parentContainter, callback){
+        var items = jQuery('<div/>').appendTo(parentContainter);
+
+        jQuery.each(list, function(index, item){
+            var itemEl = jQuery('<div />').appendTo(items);
+            var checkbox = jQuery('<input />', { type: 'checkbox', value: item.value }).appendTo(itemEl);
+            var label = jQuery('<label />').text(item.name).appendTo(itemEl);
+
+            checkbox.change(function(){
+                var sum = 0;
+
+                items.find('input').each(function(){
+                    if(jQuery(this).prop('checked')){
+                        sum += parseInt(jQuery(this).val());
+                    }
+                });
+
+                callback(sum);
+            });
         });
     };
 
-    global.bindPriceList = function(data){
-        ko.applyBindings(new PriceList(data));
+    var pricePerUnit = 0; // oh. I'm tired
+    var square = 0;
+
+    var step = function(labels, list, parentContainter, type, index){
+        index = index || 0;
+
+        var container = jQuery('<div />', { class: 'step' }).appendTo(parentContainter);
+        var headerContainer = jQuery('<div />', { class: 'header' }).appendTo(container);
+        var selectContainer = jQuery('<div />', { class: 'input' }).appendTo(container);
+        var nextStepContainer = jQuery('<div />', { class: 'next-step' }).appendTo(container);
+        var currentOptionsContainer = jQuery('<div />', { class: 'current-options' }).appendTo(container);
+        var resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
+        var nextStep, select;
+        var result = 0;
+
+        if(type == 'select')
+            select = buildSelect(list, labels.blanks[index]); 
+        else
+            select = buildSizeInputs(list, labels.blanks[index]); 
+
+        if(select){
+            headerContainer.html(labels.header[index]);
+
+            selectContainer.append(select);
+            select.change(function(e){
+                nextStepContainer.empty();
+                currentOptionsContainer.empty();
+
+                if(!select.val())
+                    return;
+
+                if(e == 'sizes'){
+                    var size = this.val();
+                    square = size.width * size.height;
+                    resultContainer.html(finishText.replace("{value}", pricePerUnit * square));
+                    return;
+                }
+
+                var currentItem = list[select.val()];
+                var items = getItems(currentItem);
+
+                if(currentItem.price_per_unit){
+                    pricePerUnit = currentItem.price_per_unit;
+                    nextStep = step(labels, items, nextStepContainer, 'size_inputs', index + 1);
+                } else {
+                    if(items){
+                        items.parent = currentItem;
+                        nextStep = step(labels, items, nextStepContainer, type, index + 1);
+                    } else {
+                        resultContainer.html(finishText.replace("{value}", currentItem.value));
+                    }
+                }
+
+                if(currentItem.price_per_unit){
+                    largeOptions(currentItem.options, currentOptionsContainer, function(multipliers){
+                        var result = pricePerUnit * square;
+
+                        for(var i = 0; i < multipliers.length; ++i)
+                            result += multipliers[i] * square;
+
+                        container.find('.step .result').html(finishText.replace("{value}", result));
+                    });
+                }
+                else if(list.parent && list.parent.options){
+                    options(getOptions(currentItem.name, list.parent.options), currentOptionsContainer, function(sum){
+                        resultContainer.html(finishText.replace("{value}", currentItem.value + sum));
+                    });
+                }
+            });
+        }
+    };
+
+    jQuery(function(){
+        jQuery.each(allDate, function(key, list){
+            var container = jQuery('.' + key + '-container');
+            var firstStep = step(labels[key], list, container, 'select');
+        });
+    });
+
+    global.bindPriceList = function(type, data){
+        allDate[type] = data;
     };
 })(window);
