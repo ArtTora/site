@@ -7,7 +7,13 @@ layout: page
 <table class="table">
   <tr>
     {% for item in page.header %}
-      <th style="{% if forloop.index == 1 %}border: 0; {% endif %} text-align: center; background: #{{ item.color }}; {% if item.width %}width: {{ item.width }}px{% endif %}">{{ item.name }}</th>
+      <th style="{% if forloop.index == 1 %}border: 0; {% endif %} text-align: center; background: #{{ item.color }}; {% if item.width %}width: {{ item.width }}px{% endif %}">
+
+        <a href="#">
+          {{ item.name }}
+        </a>
+
+      </th>
     {% endfor %}
   </tr>
 
