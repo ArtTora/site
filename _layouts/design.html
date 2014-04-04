@@ -9,7 +9,16 @@ layout: page
     {% for item in page.header %}
       <th style="{% if forloop.index == 1 %}border: 0; {% endif %} text-align: center; background: #{{ item.color }}; {% if item.width %}width: {{ item.width }}px{% endif %}">
 
-        <a href="#">
+        <a href="#" class="hint" title="
+          
+          Включает в себя:
+          <ul>
+          {% for item in item.list %}
+            <li>{{ item }}</li>
+          {% endfor %}
+          </ul>
+          
+          ">
           {{ item.name }}
         </a>
 
@@ -34,10 +43,42 @@ layout: page
 
 <br>
 
-{% for item in page.header %}
-  {% if item.description %}
-    <p><span style="background: #{{ item.color }}; display: inline-block; padding: 3px 10px; border-radius: 5px">{{ item.name }}</span> - {{ item.description }}</p>
-  {% endif %}
-{% endfor %}
+<table class="table">
+  <tr>
+    {% for item in page.header2 %}
+      <th style="{% if forloop.index == 1 %}border: 0; {% endif %} text-align: center; background: #{{ item.color }}; {% if item.width %}width: {{ item.width }}px{% endif %}">
+
+        <a href="#" class="hint" title="
+          
+          Включает в себя:
+          <ul>
+          {% for item in item.list %}
+            <li>{{ item }}</li>
+          {% endfor %}
+          </ul>
+          
+          ">
+          {{ item.name }}
+        </a>
+
+      </th>
+    {% endfor %}
+  </tr>
+
+  {% for item in page.table2 %}
+    <tr>
+      <td>{{ item.name }}</td>
+
+      {% for price in item.prices %}
+        <td style="line-height: 30px; text-align: center; background:
+          #{{ page.header[forloop.index2].color }}">
+          <div style="background: #fff; opacity: 0.8; border-radius: 5px">
+            {{ price }}
+          </div>
+        </td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
 
 {{ content }}

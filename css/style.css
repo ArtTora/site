@@ -1,4 +1,4 @@
-@charset "utf-8";
+
 ul {
 	margin-left: 0px;
 	list-style-image: none;
@@ -1881,4 +1881,16 @@ iframe {
 
 .step .result {
   float: left;
+}
+
+.tooltip-inner {
+  text-align: left;
+}
+
+.tooltip li {
+  margin: 5px 0
+}
+
+.tooltip ul {
+  margin: 10px 0
 }
