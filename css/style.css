@@ -1861,3 +1861,24 @@ iframe {
   padding-bottom: 30px;
 }
 
+.next-step {
+  float: left;
+}
+
+.step .input {
+  float: left;
+  margin-right: 10px;
+}
+
+.step select {
+  width: 150px;
+}
+
+.step input {
+  float: left;
+  margin-right: 10px;
+}
+
+.step .result {
+  float: left;
+}
