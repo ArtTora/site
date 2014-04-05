@@ -22,12 +22,6 @@ div.fancy-select div.trigger {
 	border-top-color: #A5B2CB;
 	color: #4B5468;
   width: 120px;
-
-	transition: all 240ms ease-out;
-	-webkit-transition: all 240ms ease-out;
-	-moz-transition: all 240ms ease-out;
-	-ms-transition: all 240ms ease-out;
-	-o-transition: all 240ms ease-out;
 }
 
 div.fancy-select div.trigger:after {
@@ -65,26 +59,12 @@ div.fancy-select ul.options {
 	border-radius: 4px;
 	min-width: 200px;
   padding: 0 5px;
-
-	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
-	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
-	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
-	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
-	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
 }
 
 div.fancy-select ul.options.open {
 	visibility: visible;
 	top: 50px;
 	opacity: 1;
-
-	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
-	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
-	transition: opacity 300ms ease-out, top 300ms ease-out;
-	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
-	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
-	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
-	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
 }
 
 /*
@@ -119,12 +99,6 @@ div.fancy-select ul.options li {
 	cursor: pointer;
 	white-space: nowrap;
 	border: 1px solid #ccc;
-
-	transition: all 150ms ease-out;
-	-webkit-transition: all 150ms ease-out;
-	-moz-transition: all 150ms ease-out;
-	-ms-transition: all 150ms ease-out;
-	-o-transition: all 150ms ease-out;
 }
 
 div.fancy-select ul.options li.selected, div.fancy-select ul.options li:hover {
