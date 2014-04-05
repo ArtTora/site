@@ -56,7 +56,7 @@
             return;
         }
 
-        var items = '<select><option>' + blankText + '</option>';
+        var items = '<select><option value="-1">' + blankText + '</option>';
 
         jQuery.each(list, function(index, item){
             items += '<option value="' + index + '">' + item.name + '</option>';
@@ -176,6 +176,8 @@
             selectContainer.append(select);
 
             var callback = function(e){
+                var currentItem = list[select.val()];
+
                 nextStepContainer.empty();
                 currentOptionsContainer.empty();
 
@@ -189,7 +191,6 @@
                     return;
                 }
 
-                var currentItem = list[select.val()];
                 var items = getItems(currentItem);
 
                 if(currentItem.price_per_unit){
@@ -221,12 +222,12 @@
                 }
             };
 
-            select.change(callback);
-
             if(type == 'select'){
-                selectContainer.find('select').fancySelect().on('change.fs', function(){
+                selectContainer.find('select').fancySelect({ includeBlank: true }).on('change.fs', function(){
                     callback();
                 });
+            } else {
+                select.change(callback);
             }
         }
     };

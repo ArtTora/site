@@ -87,6 +87,7 @@ div.fancy-select ul.options.open {
 	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
 }
 
+/*
 div.fancy-select ul.options.overflowing {
 	top: auto;
 	bottom: 40px;
@@ -108,6 +109,7 @@ div.fancy-select ul.options.overflowing.open {
 	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
 	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
 }
+*/
 
 div.fancy-select ul.options li {
   margin: 3px 0;
