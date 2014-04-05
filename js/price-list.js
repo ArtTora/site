@@ -62,7 +62,8 @@
             items += '<option value="' + index + '">' + item.name + '</option>';
         });
 
-        return jQuery(items + '</select>');
+        var select =  jQuery(items + '</select>');
+        return select;
     };
 
     var buildSizeInputs = function(list, blankText){
@@ -173,7 +174,8 @@
             headerContainer.html(labels.header[index]);
 
             selectContainer.append(select);
-            select.change(function(e){
+
+            var callback = function(e){
                 nextStepContainer.empty();
                 currentOptionsContainer.empty();
 
@@ -217,7 +219,15 @@
                         resultContainer.html(finishText.replace("{value}", currentItem.value + sum));
                     });
                 }
-            });
+            };
+
+            select.change(callback);
+
+            if(type == 'select'){
+                selectContainer.find('select').fancySelect().on('change.fs', function(){
+                    callback();
+                });
+            }
         }
     };
 

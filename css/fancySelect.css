@@ -10,14 +10,6 @@ div.fancy-select.disabled {
 	opacity: 0.5;
 }
 
-div.fancy-select select:focus + div.trigger {
-	box-shadow: 0 0 0 2px #4B5468;
-}
-
-div.fancy-select select:focus + div.trigger.open {
-	box-shadow: none;
-}
-
 div.fancy-select div.trigger {
 	border-radius: 4px;
 	cursor: pointer;
@@ -29,6 +21,7 @@ div.fancy-select div.trigger {
 	border: 1px solid #99A5BE;
 	border-top-color: #A5B2CB;
 	color: #4B5468;
+  width: 120px;
 
 	transition: all 240ms ease-out;
 	-webkit-transition: all 240ms ease-out;
