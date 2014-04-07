@@ -127,7 +127,7 @@ categories:
 
   - text: Календари
     link: calendars.html
-    image: images/latest_art_5.png
+    image: images/kalendar.png
     tags: offset
 
   - text: Плакаты
