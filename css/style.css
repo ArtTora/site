@@ -1821,7 +1821,8 @@ iframe {
 }
 
 .hs_main_latest a {
-	font-family: 'Marck Script', cursive;
+	/*font-family: 'Marck Script', cursive;*/
+  font-family: 'Conv_graf',Sans-Serif;
 	font-size: 28px;
 }
 
@@ -1915,4 +1916,9 @@ iframe {
 
 #BackToTop {
   z-index: 9999;
+}
+
+h1 {
+  font-family: 'Conv_graf',Sans-Serif;
+  font-size: 32px;
 }
