@@ -6,7 +6,7 @@ title: Листовки
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/listslide.jpg
     description: Image description
 
   - image: images/home_slider_2.png

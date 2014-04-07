@@ -2,13 +2,16 @@
 layout: page
 title: Визитки
 
+description: Изготовление за 1 день высококачественных визиток. Ламинирование, фольгирование, тиснение золотом/серебром - на любой вкус.
+keywords: Печать визитки в Севастополе, от 1 штуки, эксклюзивные визитки, дешево, дизайн визиток.
+
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/vizitki.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/vizitki2.jpg
     description: Image description
 
 
