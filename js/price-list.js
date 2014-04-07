@@ -176,8 +176,6 @@
             selectContainer.append(select);
 
             var callback = function(e){
-                var currentItem = list[select.val()];
-
                 nextStepContainer.empty();
                 currentOptionsContainer.empty();
 
@@ -191,6 +189,7 @@
                     return;
                 }
 
+                var currentItem = list[select.val()];
                 var items = getItems(currentItem);
 
                 if(currentItem.price_per_unit){
