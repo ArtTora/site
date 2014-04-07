@@ -1886,8 +1886,8 @@ iframe {
 
 .step .result {
   text-align: right;
-  margin-right: -90px;
-  margin-top: 20px;
+	margin-right: -150px;
+	margin-top: 50px;
 }
 
 .step .large-options {
@@ -1900,6 +1900,11 @@ iframe {
   text-align: right;
   padding-right: 10px;
   line-height: 26px;
+}
+
+.step .current-options {
+	padding-top: 20px;	
+	clear: both;
 }
 
 .tooltip-inner {

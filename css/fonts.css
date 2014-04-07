@@ -2,7 +2,7 @@
 @font-face {
 	font-family: 'Conv_graf';
 	src: url('fonts/graf.eot');
-	src: local('☺'), url('fonts/graf.woff') format('woff'), url('fonts/graf.ttf') format('truetype'), url('fonts/graf.svg') format('svg');
+	src: local('☺'), url('fonts/graf.svg') format('svg'), url('fonts/graf.woff') format('woff'), url('fonts/graf.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
