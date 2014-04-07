@@ -77,52 +77,52 @@ services:
 categories:
   - text: Визитки
     link: cards.html
-    image: images/latest_art_1.png
+    image: images/vizitka.png
     tags: offset
 
   - text: Флаера
     link: flyers.html
-    image: images/latest_art_2.png
+    image: images/flaer.png
     tags: offset
 
   - text: Листовки
     link: leaters.html
-    image: images/latest_art_3.png
+    image: images/listovka.png
     tags: offset
 
   - text: Бланки, Объявления
     link: forms.html
-    image: images/latest_art_4.png
+    image: images/blanki.png
     tags: offset
 
   - text: Пластиковые карты
     link: plastic-cards.html
-    image: images/latest_art_5.png
+    image: images/plastik.png
     tags: offset
 
   - text: Буклеты
     link: booklets.html
-    image: images/latest_art_6.png
+    image: images/broshyra.png
     tags: offset
 
   - text: Каталог
     link: brochures.html
-    image: images/latest_art_1.png
+    image: images/katalog.png
     tags: offset
 
   - text: Папки
     link: frames.html
-    image: images/latest_art_2.png
+    image: images/papki.png
     tags: offset
   
   - text: Пригласительные
     link: invitation.html
-    image: images/latest_art_3.png
+    image: images/prigl.png
     tags: offset
 
   - text: Наклейки
     link: stickers.html
-    image: images/latest_art_4.png
+    image: images/nakl.png
     tags: offset 
 
   - text: Календари
@@ -132,17 +132,17 @@ categories:
 
   - text: Плакаты
     link: posters.html
-    image: images/latest_art_6.png
+    image: images/plakat.png
     tags: offset
 
   - text: Блокноты
     link: notepads.html
-    image: images/latest_art_6.png
+    image: images/bloknot.png
     tags: offset
 
   - text: Футболка
     link: shirts.html
-    image: images/obemnie_bykvi.png
+    image: images/fytbolka.png
     tags: souvenir
 
   - text: Чашка
