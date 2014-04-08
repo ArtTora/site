@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Пазлы
-description:
-keywords:
+description: пазл с изображением семьи на подарок. Недорогой, увлекательный подарок, который всегда уместен на любой праздник.
+keywords: необычный подарок, фотография - пазл, игрушка для ребенка, корпоративный подарок для клиентов, свадебный коллаж.
 
 
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/puzzlesslide1.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/puzzlesslide2.jpg
     description: Image description
 
 ---

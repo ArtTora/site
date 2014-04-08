@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Камень
-description:
-keywords:
+description: запоминающийся подарок на всю жизнь. креативная фотография в необычной рамке недорого.
+keywords: эксклюзивный подарок, печать на камне, фото на память, необычная рамочка. 
 
 
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/stoneslide2.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/stoneslide1.jpg
     description: Image description
 
 ---

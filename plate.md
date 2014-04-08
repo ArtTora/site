@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Тарелка
-description:
-keywords:
+description: Подходящий подарок на любой праздник. напоминание о памятном событии.
+keywords:сублимация, печать на тарелках, в подарок, размещение фотографий на тарелках, фото на керамике.
 
 
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/plateslide1.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/plateslider2.jpg
     description: Image description
 
 ---
