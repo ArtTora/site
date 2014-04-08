@@ -9,7 +9,7 @@ slides:
   - image: images/listslide.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/listslide2.jpg
     description: Image description
 
 ---
