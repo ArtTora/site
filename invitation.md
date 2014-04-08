@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Пригласительные
-description:
-keywords:
+description: Свадебные приглашения, пригласительные на свадьбу. Огромный каталог свадебных приглашений ручной работы на заказ.
+keywords: Печать перигласительных в Севастополе, от 1 штуки, эксклюзивные пригласительные, дешево, дизайн пригласительных.
 
 
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/prigl2.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/prigl.jpg
     description: Image description
 
 ---

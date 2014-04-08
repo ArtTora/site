@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Папки
-description:
-keywords:
+description:  Печать на папках это конечный процесс производства фирменных папок.
+keywords: Печать на папках, тиснение, слоган, логотип, контактная информация. Тираж от 1 штуки.
 
 
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/papki2.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/papki.jpg
     description: Image description
 
 ---

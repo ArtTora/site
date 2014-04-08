@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Футболка
-description:
-keywords:
+description: Печать на футболках, чашках, тарклках, камне.
+keywords: Сувенирная печать на кружках, футболках, тарелках, кепках, флаге.ы
 
 
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/fybo2.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/fybo.jpg
     description: Image description
 
 ---

@@ -1,16 +1,16 @@
 ---
 layout: page
 title: Бланки
-description:
-keywords:
+description: На бланках оформляется большая часть документов любого предприятия.
+keywords: Печать методички, учебники, бланки, газеты, инструкции, журналы учета, бюллетени, плакаты, листовки, аггитационные листы, , протоколы, указы, медицинские карты, рецептурные блаки, бланки бухгалтерского отчета.
 
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/blank.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/blank2.jpg
     description: Image description
 
 ---

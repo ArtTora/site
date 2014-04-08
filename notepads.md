@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Блокноты
-description:
-keywords:
+description: Блокноты с фирменной символикой могут стать не только профессиональными аксессуарами, но также оригинальными корпоративными подарками.
+keywords: Печать блокнотов, тиснение, логотип, фирменая симфолика, тираж от 1 штуки.
 
 
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/bloknot2.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/bloknot.jpg
     description: Image description
 
 ---
