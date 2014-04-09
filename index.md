@@ -47,11 +47,29 @@ clients:
 slides_in_header: true
 
 slides:
-  - image: images/slaid.png
+  - image: images/slide5.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/slide4.jpg
     description: Image description
+
+
+  - image: images/slide2.jpg
+    description: Image description
+
+
+  - image: images/slide3.jpg
+    description: Image description
+
+
+  - image: images/slide.jpg
+    description: Image description
+
+
+  - image: images/slide1.jpg
+    description: Image description        
+
+
 
 services:
   - text: Офсетная печать

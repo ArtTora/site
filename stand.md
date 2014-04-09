@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Футболка
+title: Стенд
 description:
 keywords:
 
@@ -8,10 +8,10 @@ keywords:
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/stand.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/stand2.jpg
     description: Image description
 
 ---

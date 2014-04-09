@@ -8,10 +8,10 @@ keywords:
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/kronsh.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/kronsh1.jpg
     description: Image description
 
 ---

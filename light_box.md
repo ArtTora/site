@@ -8,7 +8,7 @@ keywords:
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/box.jpg
     description: Image description
 
   - image: images/home_slider_2.png

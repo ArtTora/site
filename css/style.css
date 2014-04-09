@@ -14,6 +14,11 @@ li {
 #hs_top_wrap {
 	background: url(../images/top_wrap_flow.png);
 	height: 48px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
 }
 .clear {
 	clear: both;
@@ -24,29 +29,29 @@ li {
 }
 ul.hs_main_menu_bar li {
 	float: left;
-	padding: 5px 13px 5px 13px;
+	padding: 5px 10px;
 	position: relative;
 }
 ul.hs_main_menu_bar li a {
 	font-size: 16px;
 	color: #737373;
 	text-transform: capitalize;
-  width: 75px;
-  height: 30px;
+  width: 105px;
+  height: 40px;
   overflow: hidden;
   text-indent: -999em;
   display: block;
-  background: url(../images/menu.png) no-repeat;
+  background: url(../images/menu.png) no-repeat -5px -10px;
 }
 
-ul.hs_main_menu_bar li a.design { background-position: 0 -30px }
-ul.hs_main_menu_bar li a.prices { background-position: 0 -60px }
-ul.hs_main_menu_bar li a.contacts { background-position: 0 -90px }
+ul.hs_main_menu_bar li a.design { background-position: -5px -52px }
+ul.hs_main_menu_bar li a.prices { background-position: -5px -93px }
+ul.hs_main_menu_bar li a.contacts { background-position: -5px -137px }
 
-ul.hs_main_menu_bar li a.home:hover { background-position: -75px 0 }
-ul.hs_main_menu_bar li a.design:hover { background-position: -75px -30px }
-ul.hs_main_menu_bar li a.prices:hover { background-position: -75px -60px }
-ul.hs_main_menu_bar li a.contacts:hover { background-position: -75px -90px }
+ul.hs_main_menu_bar li a.home:hover { background-position: -110px -10px }
+ul.hs_main_menu_bar li a.design:hover { background-position: -110px -52px }
+ul.hs_main_menu_bar li a.prices:hover { background-position: -110px -93px }
+ul.hs_main_menu_bar li a.contacts:hover { background-position: -110px -137px }
 
 ul.hs_main_menu_bar li a.active {
 	color: #000;
@@ -102,7 +107,7 @@ height: 360px;
 	-moz-mask-image: url(../images/slider_mask.png);
 	mask-image: url(../images/slider_mask.png);
 	height: 427px;
-	z-index: -1;
+	/*z-index: -1;*/
     position: relative;
 }
 .hs_creative_info {
@@ -1926,4 +1931,12 @@ iframe {
 h1 {
   font-family: 'Conv_graf',Sans-Serif;
   font-size: 32px;
+}
+
+.main-wrap {
+	width: 960px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 40px 10px 0 40px;
+	box-shadow: 0 0 20px #ccc;
 }
