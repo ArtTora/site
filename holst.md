@@ -8,10 +8,10 @@ keywords:
 slides_in_footer: true
 
 slides:
-  - image: images/home_slider_1.png
+  - image: images/holst.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/holst2.jpg
     description: Image description
 
 ---
