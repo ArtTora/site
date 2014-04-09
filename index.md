@@ -105,7 +105,7 @@ categories:
     image: images/broshyra.png
     tags: offset
 
-  - text: Каталог
+  - text: Брошюра
     link: brochures.html
     image: images/katalog.png
     tags: offset
