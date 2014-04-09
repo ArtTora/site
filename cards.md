@@ -14,7 +14,6 @@ slides:
   - image: images/vizitki2.jpg
     description: Image description
 
-
 ---
 
 
