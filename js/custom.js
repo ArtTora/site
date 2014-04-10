@@ -62,7 +62,7 @@
 //On Blur On Focus  
 $(document).ready(function() {
   BackToTop({
-    text : 'Наверх страницы'
+    text : ''
   });
 
     $('a.hint').tooltip({ html: true, placement: 'right' });
