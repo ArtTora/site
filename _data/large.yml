@@ -48,7 +48,7 @@
       price_per_unit: 95
 
       options:
-         - name: Ламинирование
+        - name: Ламинирование
           price_per_unit: 45
 
     - name: 720
