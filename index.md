@@ -11,36 +11,36 @@ info:
 
 clients:
   - slide:
-      - image: images/themeforest-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/graphicriver-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/activeden-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/photodune-light.png
+      - image: images/
         link: #
         description: ...
 
   - slide:
-      - image: images/themeforest-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/graphicriver-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/activeden-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/photodune-light.png
+      - image: images/
         link: #
         description: ...
 
