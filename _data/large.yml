@@ -8,76 +8,128 @@
           price_per_unit: 14
 
         - name: Прапайка
-          price_per_unit: 10
+          price_per_unit: 12
 
         - name: Ламинирование
-          price_per_unit: 10
+          price_per_unit: 45
 
     - name: 720
-      price_per_unit: 75
+      price_per_unit: 85
 
       options:
         - name: Люверсы
           price_per_unit: 14
 
         - name: Прапайка
-          price_per_unit: 10
+          price_per_unit: 12
 
         - name: Ламинирование
-          price_per_unit: 10
+          price_per_unit: 45
 
-- name: Бетон
+
+    - name: 1440
+      price_per_unit: 110
+
+      options:
+        - name: Люверсы
+          price_per_unit: 14
+
+        - name: Прапайка
+          price_per_unit: 12
+
+        - name: Ламинирование
+          price_per_unit: 45
+
+
+
+- name: Оракал
   resolutions:
     - name: 360
-      price_per_unit: 75
+      price_per_unit: 95
 
       options:
-        - name: Люверсы
-          price_per_unit: 14
-
-        - name: Прапайка
-          price_per_unit: 10
-
-        - name: Ламинирование
-          price_per_unit: 10
+         - name: Ламинирование
+          price_per_unit: 45
 
     - name: 720
-      price_per_unit: 75
+      price_per_unit: 100
 
       options:
-        - name: Люверсы
-          price_per_unit: 14
-
-        - name: Прапайка
-          price_per_unit: 10
-
+ 
         - name: Ламинирование
-          price_per_unit: 10
+          price_per_unit: 45
 
-- name: Дерево
+
+    - name: 1440
+      price_per_unit: 140
+
+      options:
+ 
+        - name: Ламинирование
+          price_per_unit: 45
+
+
+
+- name: Сити бумага
   resolutions:
     - name: 360
-      price_per_unit: 75
+      price_per_unit: 60
 
-      options:
-        - name: Люверсы
-          price_per_unit: 14
-
-        - name: Прапайка
-          price_per_unit: 10
-
-        - name: Ламинирование
-          price_per_unit: 10
 
     - name: 720
-      price_per_unit: 75
+      price_per_unit: 85
 
-      options:
-        - name: Люверсы
-          price_per_unit: 14
 
-        - name: Прапайка
-          price_per_unit: 10
+    - name: 1440
+      price_per_unit: 95
 
-        - name: Ламинирование
-          price_per_unit: 10
+- name: One way Vision
+  resolutions:
+    - name: 360
+      price_per_unit: 141
+
+
+    - name: 720
+      price_per_unit: 200
+
+
+    - name: 1440
+      price_per_unit: 220
+
+- name: Сетка Mash
+  resolutions:
+    - name: 360
+      price_per_unit: 65
+
+
+    - name: 720
+      price_per_unit: 85
+
+
+    - name: 1440
+      price_per_unit: 95
+
+- name: Печать на флажной ткани
+  resolutions:
+
+    - name: 720
+      price_per_unit: 120
+
+- name: Глянцевая фотобумага 180г/м
+  resolutions:
+
+    - name: 720
+      price_per_unit: 150    
+
+- name: Матовая фотобумага 130г/м
+  resolutions:
+
+    - name: 720
+      price_per_unit: 80            
+
+
+- name: Холст матовый
+  resolutions:
+
+    - name: 720
+      price_per_unit: 250        
