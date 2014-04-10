@@ -215,7 +215,7 @@ categories:
 
   - text: Баннер
     link: banner.html
-    image: images/baner.png
+    image: images/baner.jpg
     tags: large
 
   - text: Оракал
@@ -283,7 +283,7 @@ categories:
     image: images/viviska.png
     tags: outdoor
 
-  - text: Брэндмауэр
+  - text: Брандмауэр
     link: firewall.html
     image: images/branmayer.png
     tags: outdoor
