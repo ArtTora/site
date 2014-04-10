@@ -8,9 +8,11 @@ keywords:
 slides_in_footer: true
 
 slides:
-  - image: images/viveski.jpg
+  - image: images/compo1.jpg
     description: Image description
 
+  - image: images/compo.jpg
+    description: Image description
 
 ---
 

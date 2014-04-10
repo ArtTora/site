@@ -263,11 +263,6 @@ categories:
     image: images/roof_unit.png
     tags: outdoor
 
-  - text: Композит
-    link: compo.html
-    image: images/kompozit.png
-    tags: outdoor
-
   - text: Стенд
     link: stand.html
     image: images/stand.png
