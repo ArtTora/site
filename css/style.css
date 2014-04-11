@@ -1822,8 +1822,8 @@ iframe {
 
 .hs_main_latest a {
 	/*font-family: 'Marck Script', cursive;*/
-  font-family: 'Conv_graf',Sans-Serif;
-	font-size: 28px;
+  font-family: 'graffiti2cregular', Sans-Serif;
+	font-size: 1.5em;
 }
 
 .price-list {
@@ -1919,6 +1919,6 @@ iframe {
 }
 
 h1 {
-  font-family: 'Conv_graf',Sans-Serif;
-  font-size: 32px;
+  font-family: graffiti2cregular, serif;
+  font-size: 2em;
 }
