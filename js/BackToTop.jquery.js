@@ -72,7 +72,7 @@
 				href : '#body',
 				css : {
 					top: 'auto',
-					right: 130,
+					right: 30,
 					bottom: 30,
 					opacity: opts.opacity
 				},
