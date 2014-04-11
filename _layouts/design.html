@@ -53,12 +53,16 @@ layout: page
 
         <a href="#" class="hint" title="
           
+          {% if item.description %}
+            {{ item.description }}
+          {% else %}
           Включает в себя:
           <ul>
           {% for item in item.list %}
             <li>{{ item }}</li>
           {% endfor %}
           </ul>
+          {% endif %}
           
           ">
           {{ item.name }}

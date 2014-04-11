@@ -11,47 +11,65 @@ info:
 
 clients:
   - slide:
-      - image: images/themeforest-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/graphicriver-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/activeden-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/photodune-light.png
+      - image: images/
         link: #
         description: ...
 
   - slide:
-      - image: images/themeforest-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/graphicriver-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/activeden-light.png
+      - image: images/
         link: #
         description: ...
 
-      - image: images/photodune-light.png
+      - image: images/
         link: #
         description: ...
 
 slides_in_header: true
 
 slides:
-  - image: images/slaid.png
+  - image: images/slide5.jpg
     description: Image description
 
-  - image: images/home_slider_2.png
+  - image: images/slide4.jpg
     description: Image description
+
+
+  - image: images/slide2.jpg
+    description: Image description
+
+
+  - image: images/slide3.jpg
+    description: Image description
+
+
+  - image: images/slide.jpg
+    description: Image description
+
+
+  - image: images/slide1.jpg
+    description: Image description        
+
+
 
 services:
   - text: Офсетная печать
@@ -77,207 +95,202 @@ services:
 categories:
   - text: Визитки
     link: cards.html
-    image: images/latest_art_1.png
+    image: images/vizitka1.jpg
     tags: offset
 
   - text: Флаера
     link: flyers.html
-    image: images/latest_art_2.png
+    image: images/flaer1.jpg
     tags: offset
 
   - text: Листовки
     link: leaters.html
-    image: images/latest_art_3.png
+    image: images/listovka1.jpg
     tags: offset
 
   - text: Бланки, Объявления
     link: forms.html
-    image: images/latest_art_4.png
+    image: images/blanki1.jpg
     tags: offset
 
   - text: Пластиковые карты
     link: plastic-cards.html
-    image: images/latest_art_5.png
+    image: images/plastik1.jpg
     tags: offset
 
   - text: Буклеты
     link: booklets.html
-    image: images/latest_art_6.png
+    image: images/broshyra1.jpg
     tags: offset
 
-  - text: Каталог
+  - text: Брошюра
     link: brochures.html
-    image: images/latest_art_1.png
+    image: images/katalog1.jpg
     tags: offset
 
   - text: Папки
     link: frames.html
-    image: images/latest_art_2.png
+    image: images/papki1.jpg
     tags: offset
   
   - text: Пригласительные
     link: invitation.html
-    image: images/latest_art_3.png
+    image: images/prigl1.jpg
     tags: offset
 
   - text: Наклейки
     link: stickers.html
-    image: images/latest_art_4.png
+    image: images/nakl1.jpg
     tags: offset 
 
   - text: Календари
     link: calendars.html
-    image: images/latest_art_5.png
+    image: images/kalendar.png
     tags: offset
 
   - text: Плакаты
     link: posters.html
-    image: images/latest_art_6.png
+    image: images/plakat1.jpg
     tags: offset
 
   - text: Блокноты
     link: notepads.html
-    image: images/latest_art_6.png
+    image: images/bloknot1.jpg
     tags: offset
 
   - text: Футболка
     link: shirts.html
-    image: images/obemnie_bykvi.png
+    image: images/fytbolka1.jpg
     tags: souvenir
 
   - text: Чашка
     link: caps.html
-    image: images/chashka.png
+    image: images/chashka1.jpg
     tags: souvenir
 
   - text: Тарелка
     link: plate.html
-    image: images/tarelka.png
+    image: images/tarelka1.jpg
     tags: souvenir
 
   - text: Камень
     link: stone.html
-    image: images/kamen.png
+    image: images/kamen1.jpg
     tags: souvenir
 
   - text: Ручка
     link: pen.html
-    image: images/rychki.png
+    image: images/rychki1.jpg
     tags: souvenir
 
   - text: Брелок
     link: trinket.html
-    image: images/brelok.png
+    image: images/brelok.jpg
     tags: souvenir
 
   - text: Пакет
     link: packet.html
-    image: images/paket.png
+    image: images/paket1.jpg
     tags: souvenir
 
   - text: Магнит
     link: magnet.html
-    image: images/magnit.png
+    image: images/magnit1.jpg
     tags: souvenir
 
   - text: Пазлы
     link: puzzles.html
-    image: images/pazli.png
+    image: images/pazli1.jpg
     tags: souvenir
 
   - text: Подушка, Наволочка
     link: pillow_pillowcase.html
-    image: images/podyshka.png
+    image: images/podyshka1.jpg
     tags: souvenir
 
   - text: Коврик (для мыши)
     link: mousepad.html
-    image: images/kovrik.png
+    image: images/kovrik1.jpg
     tags: souvenir
 
   - text: Баннер
     link: banner.html
-    image: images/baner.png
+    image: images/baner.jpg
     tags: large
 
   - text: Оракал
     link: oracal.html
-    image: images/oracal.png
+    image: images/oracal1.jpg
     tags: large
 
   - text: Сетка Mesh
     link: mesh.html
-    image: images/mesh.png
+    image: images/mesh2.jpg
     tags: large
 
   - text: One Way Vision
     link: one_vision.html
-    image: images/one-way-vision.png
+    image: images/one-way-vision1.jpg
     tags: large
 
   - text: Холст
     link: holst.html
-    image: images/holst.png
+    image: images/holst1.jpg
     tags: large
 
   - text: Флаг
     link: flag.html
-    image: images/flag.png
+    image: images/flag1.jpg
     tags: large
 
   - text: Штендер
     link: shtender.html
-    image: images/shtender.png
+    image: images/shtender1.jpg
     tags: outdoor
 
   - text: Объемные буквы
     link: large_letters.html
-    image: images/large_letters.png
+    image: images/large_letters1.jpg
     tags: outdoor
 
   - text: Световой короб
     link: light_box.html
-    image: images/svet_korob.png
+    image: images/svet_korob1.jpg
     tags: outdoor
 
   - text: Накрышная установка
     link: roof_unit.html
-    image: images/roof_unit.png
-    tags: outdoor
-
-  - text: Композит
-    link: compo.html
-    image: images/kompozit.png
+    image: images/roof_unit1.jpg
     tags: outdoor
 
   - text: Стенд
     link: stand.html
-    image: images/stand.png
+    image: images/stand1.jpg
     tags: outdoor
 
   - text: Стелла
     link:  stella.html
-    image: images/stela.png
+    image: images/stela1.jpg
     tags: outdoor
 
   - text: Таблички
     link: tabl.html
-    image: images/tablichki.png
+    image: images/tablichki1.jpg
     tags: outdoor
 
   - text: Вывески
     link: signs.html
-    image: images/viviska.png
+    image: images/viviska1.jpg
     tags: outdoor
 
-  - text: Брэндмауэр
+  - text: Брандмауэр
     link: firewall.html
-    image: images/branmayer.png
+    image: images/branmayer1.jpg
     tags: outdoor
 
   - text: Кронштейн
     link: kronshtein.html
-    image: images/kronshtein.png
+    image: images/kronshtein1.jpg
     tags: outdoor
 
 

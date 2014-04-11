@@ -10,8 +10,6 @@
               copyCount: [[1-3, 60], [3-10, 50]]
 
 
-    - name: 85Х190
-      chromaticities:
         - name: цветная внутри, цветная снаружи     
 
           paper_types:
@@ -19,24 +17,17 @@
               copyCount: [[1-3, 70], [3-10, 60]]
 
 
-    - name: 85Х190
-      chromaticities:
         - name: стекло, матовое стекло
           paper_types:
             - name: стекло
               copyCount: [[1-3, 70], [3-10, 60]]
- 
-    - name: 85Х190 
-      chromaticities:
+
         - name: детская(дельфин,зебра,свинка,тигр...)      
 
           paper_types:
             - name: керамика
               copyCount: [[1-3, 85], [3-10, 75]]
 
-
-    - name: 85Х190
-      chromaticities:
         - name: кружка хамелион (черная, синяя,  красная)     
 
           paper_types:
@@ -78,11 +69,77 @@
 - name: Фотокамень
 
   formats:
-    - name: А3 большой
+    - name: 20х20
       chromaticities:
         - name: Одосторонняя    
 
           paper_types:
-            - name: картон с Уф покрытием
+            - name: камень
               copyCount: [[1-3, 110], [3-10, 100]]                
 
+    - name: 14х14
+      chromaticities:
+        - name: Одосторонняя    
+
+          paper_types:
+            - name: камень
+              copyCount: [[1-3, 90], [3-10, 80]]
+
+- name: Подушка
+
+  formats:
+    - name: 30*30 розовая/зеленая
+      chromaticities:
+        - name: Одосторонняя    
+
+          paper_types:
+            - name: синтепон
+              copyCount: [[1-3, 80], [3-10, 70]]
+
+
+- name: Футболка
+
+  formats:
+    - name: Белая
+      chromaticities:
+        - name: Одосторонняя    
+
+          paper_types:
+            - name: хлопок+синтетика
+              copyCount: [[1-3, 120], [3-10, 110]]              
+
+
+- name: Тарелка
+
+  formats:
+    - name: золотая полоса/орнамент
+      chromaticities:
+        - name: Одосторонняя    
+
+          paper_types:
+            - name: керамика
+              copyCount: [[1-3, 70], [3-10, 60]]              
+
+
+- name: Наволочка
+
+  formats:
+    - name: 40*40
+      chromaticities:
+        - name: Одосторонняя    
+
+          paper_types:
+            - name: атлас
+              copyCount: [[1-3, 60], [3-10, 50]]              
+
+
+- name: Брелок пластиковый
+
+  formats:
+    - name: 3х4.5, 3.5х3.5, сердце 4х4 
+      chromaticities:
+        - name: Двухсторонняя    
+
+          paper_types:
+            - name: пластик
+              copyCount: [[1-3, 12], [3-10, 10]]               
