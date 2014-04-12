@@ -2,7 +2,7 @@
 layout: contacts
 title: Наши контакты
 
-email: arttora@yandex.ru
+email: poligraphiya@arttora.com
 phones: 099-387-34-24 <br> 095-031-96-27 <br> 098-840-08-69 <br> 093-690-93-36
 address: г. Севастополь <br> ул. Горького, 2
 ---
