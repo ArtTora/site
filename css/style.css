@@ -473,8 +473,7 @@ ul.hs_social_blog li a.flickr {
 	-moz-mask-image: url(../images/slider_mask.png);
 	mask-image: url(../images/slider_mask.png);
 	height: 427px;
-	z-index: -1;
-position: relative;
+  position: relative;
 }
 .hs_blog_meta {
 	font-weight: 700;
@@ -709,7 +708,7 @@ ul.hs_tag_menu li a {
 .hs_slide_part {
 	margin-left: -21px !important;
 	margin-bottom: 20px;
-	background: url;
+	background: url(../images/slider_bg.png);
 	background-size: 100% 100%;
 	margin-bottom: 15px;
 	margin-top: 30px;
