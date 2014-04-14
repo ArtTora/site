@@ -1935,7 +1935,16 @@ h1 {
 .main-wrap {
 	width: 960px;
 	margin: 0 auto;
-	background: #fff;
 	padding: 40px 10px 0 40px;
 	box-shadow: 0 0 20px #ccc;
+}
+
+.page-content {
+	margin: 0 20px 0 -10px;
+}
+
+small.help {
+	display: block;
+	line-height: 16px;
+	font-size: 12px;
 }

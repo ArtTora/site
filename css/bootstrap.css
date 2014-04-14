@@ -172,7 +172,7 @@ body {
 	font-size: 19px;
 	line-height: 26px;
 	color: #000;
-	background: url(../images/bg.jpg) ;
+	background: url(../images/bg_pattern.png) ;
 }
 a {
 	color: #000;
@@ -3902,10 +3902,11 @@ to {
 	color: #000;
 	text-align: center;
 	text-decoration: none;
-	background-color: #f55;
+	background-color: #fff;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	border: 1px solid #000;
 }
 .tooltip-arrow {
 	position: absolute;

@@ -50,12 +50,11 @@ clients:
 slides_in_header: true
 
 slides:
-  - image: images/slide5.jpg
-    description: Image description
-
   - image: images/slide4.jpg
     description: Image description
 
+  - image: images/slide5.jpg
+    description: Image description
 
   - image: images/slide2.jpg
     description: Image description
