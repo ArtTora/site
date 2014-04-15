@@ -7,7 +7,7 @@
         - name: Люверсы
           price_per_unit: 14
 
-        - name: Прапайка
+        - name: Пропайка
           price_per_unit: 12
 
         - name: Ламинирование
@@ -20,7 +20,7 @@
         - name: Люверсы
           price_per_unit: 14
 
-        - name: Прапайка
+        - name: Пропайка
           price_per_unit: 12
 
         - name: Ламинирование
@@ -34,7 +34,7 @@
         - name: Люверсы
           price_per_unit: 14
 
-        - name: Прапайка
+        - name: Пропайка
           price_per_unit: 12
 
         - name: Ламинирование
@@ -83,7 +83,7 @@
     - name: 1440
       price_per_unit: 95
 
-- name: One way Vision
+- name: One Way Vision
   resolutions:
     - name: 360
       price_per_unit: 141
@@ -115,13 +115,13 @@
     - name: 720
       price_per_unit: 120
 
-- name: Глянцевая фотобумага 180г/м
+- name: Глянцевая фотобумага 180 г/м
   resolutions:
 
     - name: 720
       price_per_unit: 150    
 
-- name: Матовая фотобумага 130г/м
+- name: Матовая фотобумага 130 г/м
   resolutions:
 
     - name: 720
