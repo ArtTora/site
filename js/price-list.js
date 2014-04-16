@@ -161,7 +161,7 @@
         var selectContainer = jQuery('<div />', { class: 'input' }).appendTo(container);
         var nextStepContainer = jQuery('<div />', { class: 'next-step' }).appendTo(container);
         var currentOptionsContainer = jQuery('<div />', { class: 'current-options' }).appendTo(container);
-        var resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
+        var resultContainer;
         var nextStep, select;
         var result = 0;
 
@@ -185,6 +185,7 @@
                 if(e == 'sizes'){
                     var size = this.val();
                     square = size.width * size.height;
+                    if(!resultContainer) resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
                     resultContainer.html(finishText.replace("{value}", pricePerUnit * square));
                     return;
                 }
@@ -200,6 +201,7 @@
                         items.parent = currentItem;
                         nextStep = step(labels, items, nextStepContainer, type, index + 1);
                     } else {
+                        if(!resultContainer) resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
                         resultContainer.html(finishText.replace("{value}", currentItem.value));
                     }
                 }
@@ -216,6 +218,7 @@
                 }
                 else if(list.parent && list.parent.options){
                     options(getOptions(currentItem.name, list.parent.options), currentOptionsContainer, function(sum){
+                        if(!resultContainer) resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
                         resultContainer.html(finishText.replace("{value}", currentItem.value + sum));
                     });
                 }
@@ -223,6 +226,7 @@
 
             if(type == 'select'){
                 selectContainer.find('select').fancySelect({ includeBlank: true }).on('change.fs', function(){
+                    console.log('change');
                     callback();
                 });
             } else {
