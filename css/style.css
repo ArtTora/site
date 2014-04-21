@@ -1948,3 +1948,13 @@ small.help {
 	line-height: 16px;
 	font-size: 12px;
 }
+
+.help-button {
+  display: block;
+  margin-top: 15px;
+  margin-right: 20px;
+  padding: 10px 0 10px 0;
+  background: #CCEC24;
+  text-align: center;
+  border-radius: 30px;
+}

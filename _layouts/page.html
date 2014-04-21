@@ -6,8 +6,11 @@ layout: default
   <div class="span12">
     <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
     <div class="span12 hs_left">
-      <div class="span10 hs_inner_heading">
+      <div class="span9 hs_inner_heading">
         <h1>{{ page.title }}</h1>
+      </div>
+      <div class="span3">
+        <a href="#help-modal" class="help-button" data-toggle="modal">Как заказать?</a>
       </div>
     </div>
     <div class="span12 hs_left hs_heading_part"> <img src="images/seprator.png" alt="seprator"/> </div>
@@ -16,4 +19,17 @@ layout: default
 
 <div class="page-content">
   {{content}}
+</div>
+
+<div class="modal hide fade" id="help-modal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Как заказать?</h3>
+  </div>
+  <div class="modal-body">
+    {% include help.md %}
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Закрыть</a>
+  </div>
 </div>
