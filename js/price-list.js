@@ -225,10 +225,7 @@
             };
 
             if(type == 'select'){
-                selectContainer.find('select').fancySelect({ includeBlank: true }).on('change.fs', function(){
-                    console.log('change');
-                    callback();
-                });
+                selectContainer.find('select').change(callback);
             } else {
                 select.change(callback);
             }
