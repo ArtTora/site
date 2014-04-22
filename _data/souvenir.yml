@@ -35,10 +35,13 @@
               copyCount: [[1-3, 85], [3-10, 75]]   
 
 
+- name: Бокал пивной  
 
-    - name: 
+  formats:
+    - name:  Стандарт
       chromaticities:
-        - name: Бокал пивной   
+        - name: Прозрачный       
+
 
           paper_types:
             - name: керамика, стекло матовое 
