@@ -31,22 +31,7 @@ clients:
         description: ...
 
   - slide:
-      - image: images/
-        link: #
-        description: ...
-
-      - image: images/
-        link: #
-        description: ...
-
-      - image:
-        link: #
-        description: 
-
-      - image: images/
-        link: #
-        description: ...
-
+      
 slides_in_header: true
 
 slides:
