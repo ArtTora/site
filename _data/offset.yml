@@ -158,7 +158,7 @@
         - name: Односторонняя
           paper_types:
             - name: 130 гр/м Глянцевая
-              copyCount: [[2000, 330]]
+              copyCount: [[2000, 363 (1125 руб.)]]
 
         - name:  Двухсторонная
           paper_types:
