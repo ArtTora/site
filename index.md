@@ -6,9 +6,9 @@ keywords: Офсетная печать, сувенирная печать, ши
 
 info:
   title: О нас
-  text:  Мы профессионалы своего дела работающие с полиграфической продукцией высшего качества, имея в своём распоряжени лучшее оборудование способное решить самые сложные задачи в кротчайшие сроки.
+  text:  Мы профессионалы своего дела работающие с полиграфической продукцией высшего качества, имея в своём распоряжени лучшее оборудование способное решить самые сложные задачи в кротчайшие сроки. <br><br>
   
-         В зависимости от желаний или поставленных задач клиентом, мы также задействуем возможности наших партнеров, в разных областях, объединяясь для достижения конечного результата. Для  сотрудников Тора нет невыполнимых заказов, есть много опыта и желания помочь нашему клиенту в сфери рекламы и полиграфии.  
+         В зависимости от желаний или поставленных задач клиентом, мы также задействуем возможности наших партнеров, в разных областях, объединяясь для достижения конечного результата. Для  сотрудников Тора нет невыполнимых заказов, есть много опыта и желания помочь нашему клиенту в сфери рекламы и полиграфии.  <br><br>
   
          Работая с Вами, мы рассчитываем на долгосрочное взаимовыгодное сотрудничество, поэтому готовы предоставлять лояльные цены, большие скидки и всевозможные бонусы.
 
@@ -16,60 +16,44 @@ clients:
   - slide:
       - image: images/
         link: #
-        description: ...
+        description: Драйв Картинг
 
       - image: images/
         link: #
-        description: ...
+        description: Первый Морской Севастопольский Институт
 
       - image: images/
         link: #
-        description: ...
+        description: Нахимовская администрация
 
       - image: images/
         link: #
-        description: ...
+        description: Салон Сиайл
 
-  - slide:
-      - image: images/
-        link: #
-        description: ...
-
-      - image: images/
-        link: #
-        description: ...
-
-      - image: images/
-        link: #
-        description: ...
-
-      - image: images/
-        link: #
-        description: ...
 
 slides_in_header: true
 
 slides:
   - image: images/slide4.jpg
-    description: Image description
+    description: картинка с насыщеным цветом
 
   - image: images/slide5.jpg
-    description: Image description
+    description: разноцветный слайд 
 
   - image: images/slide2.jpg
-    description: Image description
+    description: цветавая палитра
 
 
   - image: images/slide3.jpg
-    description: Image description
+    description: разнообразие цветов
 
 
   - image: images/slide.jpg
-    description: Image description
+    description: первый креатив
 
 
   - image: images/slide1.jpg
-    description: Image description        
+    description: картинка - настроение        
 
 
 

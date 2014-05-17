@@ -1,7 +1,7 @@
 (function(global){
     var allDate = {};
     var itemNames = ['formats', 'chromaticities', 'paper_types', 'items'];
-    var finishText = "Стоимость работы: {value}грн";
+    var finishText = "<table><tr><td style='padding-right: 20px'>Стоимость работы:</td><td style='text-align:left'>{value}грн</td></tr><tr><td></td><td style='text-align:left'>({rub-value}руб)</td></tr></table>";
 
     var labels = {
         offset: {
@@ -175,6 +175,11 @@
 
             selectContainer.append(select);
 
+            var showResult = function(value){
+                if(!resultContainer) resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
+                resultContainer.html(finishText.replace("{value}", value).replace("{rub-value}", value * 3.1));
+            }
+
             var callback = function(e){
                 nextStepContainer.empty();
                 currentOptionsContainer.empty();
@@ -185,8 +190,7 @@
                 if(e == 'sizes'){
                     var size = this.val();
                     square = size.width * size.height;
-                    if(!resultContainer) resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
-                    resultContainer.html(finishText.replace("{value}", pricePerUnit * square));
+                    showResult(pricePerUnit * square);
                     return;
                 }
 
@@ -201,8 +205,7 @@
                         items.parent = currentItem;
                         nextStep = step(labels, items, nextStepContainer, type, index + 1);
                     } else {
-                        if(!resultContainer) resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
-                        resultContainer.html(finishText.replace("{value}", currentItem.value));
+                        showResult(currentItem.value);
                     }
                 }
 
@@ -218,8 +221,7 @@
                 }
                 else if(list.parent && list.parent.options){
                     options(getOptions(currentItem.name, list.parent.options), currentOptionsContainer, function(sum){
-                        if(!resultContainer) resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
-                        resultContainer.html(finishText.replace("{value}", currentItem.value + sum));
+                        showResult(currentItem.value + sum);
                     });
                 }
             };
