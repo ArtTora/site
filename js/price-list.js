@@ -177,7 +177,7 @@
 
             var showResult = function(value){
                 if(!resultContainer) resultContainer = jQuery('<div />', { class: 'result' }).appendTo(container);
-                resultContainer.html(finishText.replace("{value}", value).replace("{rub-value}", value * 3.1));
+                resultContainer.html(finishText.replace("{value}", value).replace("{rub-value}", value * 3.0));
             }
 
             var callback = function(e){
