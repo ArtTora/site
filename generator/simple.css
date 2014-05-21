@@ -1,0 +1,6 @@
+table { border-collapse: collapse; width: 100%; }
+td { border: 1px solid #111; padding: 3px 5px }
+td.name { white-space:nowrap; }
+td.price { width: 60px; text-align: center }
+
+.break { page-break-before:always; }
