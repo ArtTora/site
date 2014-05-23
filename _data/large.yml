@@ -40,6 +40,7 @@
         - name: Ламинирование
           price_per_unit: 45
 
+
 - name: Баннер экосольвентный
   resolutions:
     - name: 1440
@@ -54,6 +55,7 @@
           
         - name: Ламинирование
           price_per_unit: 45
+   
           
 - name: Баннер ламинированный 
   resolutions:
@@ -77,6 +79,7 @@
           
         - name: Пропайка
           price_per_unit: 15
+    
         
 - name: Баннер двухсторонний 
   resolutions:
