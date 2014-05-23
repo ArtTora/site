@@ -82,8 +82,6 @@
     - name: 540
       price_per_unit: 280
       
-- name: Постер 3х6 
-  resolutions:
 
     - name: 1080
       price_per_unit: 300      
