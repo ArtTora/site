@@ -33,10 +33,21 @@
       options:
         - name: Люверсы
           price_per_unit: 15
-          
         - name: Пропайка
           price_per_unit: 15
+        - name: Ламинирование
+          price_per_unit: 45
 
+- name: Баннер экосольвентный
+  resolutions:
+    - name: 1440
+      price_per_unit: 110
+
+      options:
+        - name: Люверсы
+          price_per_unit: 15
+        - name: Пропайка
+          price_per_unit: 15
         - name: Ламинирование
           price_per_unit: 45
           
@@ -49,7 +60,6 @@
       options:
         - name: Люверсы
           price_per_unit: 15
-          
         - name: Пропайка
           price_per_unit: 15
           
