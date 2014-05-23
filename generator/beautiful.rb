@@ -46,14 +46,14 @@ html = Arbre::Context.new do
                     tr do
                       td 'Тираж'
                       td 'Цена'
-                      td 'Срок изголовления'
+                      #td 'Срок изголовления'
                     end
 
                     pt['copyCount'].each do |count, price|
                       tr do
                         td count
                         td price
-                        td 'от 3 до 5 раб. д.'
+                        #td 'от 3 до 5 раб. д.'
                       end
                     end
                   end
