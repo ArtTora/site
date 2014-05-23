@@ -1,48 +1,95 @@
 - name: Баннер
   resolutions:
     - name: 360
-      price_per_unit: 75
+      price_per_unit: 90
 
       options:
         - name: Люверсы
-          price_per_unit: 14
+          price_per_unit: 15
 
         - name: Пропайка
-          price_per_unit: 12
+          price_per_unit: 15
 
         - name: Ламинирование
           price_per_unit: 45
 
     - name: 720
-      price_per_unit: 85
+      price_per_unit: 100
 
       options:
         - name: Люверсы
-          price_per_unit: 14
+          price_per_unit: 15
 
         - name: Пропайка
-          price_per_unit: 12
+          price_per_unit: 15
 
         - name: Ламинирование
           price_per_unit: 45
 
 
     - name: 1440
-      price_per_unit: 110
+      price_per_unit: 120
 
       options:
         - name: Люверсы
-          price_per_unit: 14
-
+          price_per_unit: 15
+          
         - name: Пропайка
-          price_per_unit: 12
+          price_per_unit: 15
 
         - name: Ламинирование
           price_per_unit: 45
+          
+- name: Баннер ламинированный 
+  resolutions:
 
+    - name: 540
+      price_per_unit: 95
+      
+      options:
+        - name: Люверсы
+          price_per_unit: 15
+          
+        - name: Пропайка
+          price_per_unit: 15
+          
+    - name: 1080
+      price_per_unit: 105
 
+      options:
+        - name: Люверсы
+          price_per_unit: 15
+          
+        - name: Пропайка
+          price_per_unit: 15
+        
+- name: Баннер двухсторонний 
+  resolutions:
 
-- name: Оракал
+    - name: 5х0,8м
+      price_per_unit: 750
+      
+      options:
+        - name: Люверсы
+          price_per_unit: 15
+          
+        - name: Пропайка
+          price_per_unit: 15          
+          
+- name: Постер 3х6 
+  resolutions:
+
+    - name: 540
+      price_per_unit: 280
+      
+- name: Постер 3х6 
+  resolutions:
+
+    - name: 1080
+      price_per_unit: 300      
+          
+          
+- name: Оракал (пленка самоклейка белая)
   resolutions:
     - name: 360
       price_per_unit: 95
@@ -52,15 +99,30 @@
           price_per_unit: 45
 
     - name: 720
-      price_per_unit: 100
+      price_per_unit: 110
 
       options:
- 
         - name: Ламинирование
           price_per_unit: 45
 
 
     - name: 1440
+      price_per_unit: 140
+
+      options:
+        - name: Ламинирование
+          price_per_unit: 45
+          
+- name: Оракал (пленка самоклейка прозрачная)
+  resolutions:
+    - name: 540
+      price_per_unit: 97
+
+      options:
+        - name: Ламинирование
+          price_per_unit: 45
+
+    - name: 1080
       price_per_unit: 140
 
       options:
@@ -86,7 +148,7 @@
 - name: One Way Vision
   resolutions:
     - name: 360
-      price_per_unit: 141
+      price_per_unit: 140
 
 
     - name: 720
@@ -99,21 +161,21 @@
 - name: Сетка Mash
   resolutions:
     - name: 360
-      price_per_unit: 65
+      price_per_unit: 100
 
 
     - name: 720
-      price_per_unit: 85
+      price_per_unit: 120
 
 
     - name: 1440
-      price_per_unit: 95
+      price_per_unit: 140
 
 - name: Печать на флажной ткани
   resolutions:
 
-    - name: 720
-      price_per_unit: 120
+    - name: 540
+      price_per_unit: 130
 
 - name: Глянцевая фотобумага 180 г/м
   resolutions:
@@ -132,4 +194,18 @@
   resolutions:
 
     - name: 720
-      price_per_unit: 250        
+      price_per_unit: 250   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
