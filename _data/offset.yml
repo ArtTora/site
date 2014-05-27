@@ -377,6 +377,14 @@
           - 1597
 - name: Листовки
   formats:
+  - name: А7(50х72)
+    chromaticities:
+    - name: Двухсторонная
+      paper_types:
+      - name: 130 гр/м
+        copyCount:
+        - - 10000
+          - 1000  
   - name: А6(100х144)
     chromaticities:
     - name: Односторонняя
@@ -2741,7 +2749,7 @@
   formats:
   - name: Круглая высечка (88х198)
     chromaticities:
-    - name: Односторонняя
+    - name: Двухсторонняя
       paper_types:
       - name: 130 гр/м
         copyCount:
@@ -2755,7 +2763,7 @@
           - 2079
   - name: На крючке (80х196)
     chromaticities:
-    - name: Односторонняя
+    - name: Двухсторонняя
       paper_types:
       - name: 130 гр/м
         copyCount:
