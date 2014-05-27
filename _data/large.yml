@@ -98,11 +98,8 @@
   resolutions:
 
     - name: 540
-      price_per_unit: 280
+      price_per_unit: 300
       
-
-    - name: 1080
-      price_per_unit: 300      
           
           
 - name: Оракал (пленка самоклейка белая)
