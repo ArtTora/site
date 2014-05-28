@@ -129,14 +129,14 @@
 - name: Оракал (пленка самоклейка прозрачная)
   resolutions:
     - name: 540
-      price_per_unit: 97
+      price_per_unit: 93
 
       options:
         - name: Ламинирование
           price_per_unit: 45
 
     - name: 1080
-      price_per_unit: 140
+      price_per_unit: 138
 
       options:
  
