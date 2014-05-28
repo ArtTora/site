@@ -161,15 +161,15 @@
 - name: One Way Vision
   resolutions:
     - name: 360
-      price_per_unit: 140
+      price_per_unit: 155
 
 
     - name: 720
-      price_per_unit: 200
+      price_per_unit: 215
 
 
     - name: 1440
-      price_per_unit: 220
+      price_per_unit: 230
 
 - name: Сетка Mash
   resolutions:
