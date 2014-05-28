@@ -57,7 +57,7 @@
           price_per_unit: 45
    
           
-- name: Баннер ламинированный 
+- name: Баннер ламинированный 440
   resolutions:
 
     - name: 540
@@ -94,11 +94,11 @@
         - name: Пропайка
           price_per_unit: 15          
           
-- name: Постер 3х6 
+- name: Блюбэк 115 
   resolutions:
 
-    - name: 540
-      price_per_unit: 300
+    - name: 360
+      price_per_unit: 40
       
           
           
@@ -145,7 +145,7 @@
 
 
 
-- name: Сити бумага
+- name: Сити бумага 150
   resolutions:
     - name: 360
       price_per_unit: 60
@@ -171,7 +171,7 @@
     - name: 1440
       price_per_unit: 220
 
-- name: Сетка Mash
+- name: Сетка Mash 270
   resolutions:
     - name: 360
       price_per_unit: 100
