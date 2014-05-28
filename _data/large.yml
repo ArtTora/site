@@ -165,11 +165,11 @@
 
 
     - name: 720
-      price_per_unit: 215
+      price_per_unit: 210
 
 
     - name: 1440
-      price_per_unit: 230
+      price_per_unit: 220
 
 - name: Сетка Mash
   resolutions:
@@ -178,11 +178,11 @@
 
 
     - name: 720
-      price_per_unit: 120
+      price_per_unit: 130
 
 
     - name: 1440
-      price_per_unit: 140
+      price_per_unit: 145
 
 - name: Печать на флажной ткани
   resolutions:
@@ -194,7 +194,7 @@
   resolutions:
 
     - name: 720
-      price_per_unit: 150    
+      price_per_unit: 160    
 
 - name: Матовая фотобумага 130 г/м
   resolutions:
