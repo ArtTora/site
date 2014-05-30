@@ -171,7 +171,7 @@
           prices:
           - - 100
             - 35
-  - name: 55x86
+  - name: 55x85
     chromaticities:
     - name: Односторонняя
       paper_types:
@@ -2231,6 +2231,18 @@
           - 1718
         - - 1000
           - 2183
+  - name: А1(840х594)
+    chromaticities:
+    - name: Одностороняя
+      paper_types:
+      - name: 115 гр/м
+        copyCount:
+        - - 1
+          - 70
+        - - 2
+          - 140
+        - - 3
+          - 210          
   - name: А0(1188х840)
     chromaticities:
     - name: Одностороняя
