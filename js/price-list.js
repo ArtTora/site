@@ -216,7 +216,7 @@
                         for(var i = 0; i < multipliers.length; ++i)
                             result += multipliers[i] * square;
 
-                        container.find('.step .result').html(finishText.replace("{value}", result));
+                        container.find('.step .result').html(finishText.replace("{value}", result).replace("{rub-value}", result * 3.0));
                     });
                 }
                 else if(list.parent && list.parent.options){
