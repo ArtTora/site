@@ -1,7 +1,7 @@
 (function(global){
     var allDate = {};
     var itemNames = ['formats', 'chromaticities', 'paper_types', 'items'];
-    var finishText = "<table><tr><td style='padding-right: 20px'>Стоимость работы:</td><td style='text-align:left'>{value}грн</td></tr><tr><td></td><td style='text-align:left'>({rub-value}руб)</td></tr></table>";
+    var finishText = "<table><tr><td style='padding-right: 20px'>Стоимость работы:</td><td style='text-align:left'>{rub-value}руб.</td></tr></table>";
 
     var labels = {
         offset: {
