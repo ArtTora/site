@@ -5,13 +5,13 @@
 
       options:
         - name: Люверсы
-          price_per_unit: 17
+          price_per_unit: 51
 
         - name: Пропайка
-          price_per_unit: 17
+          price_per_unit: 51
 
         - name: Ламинирование
-          price_per_unit: 55
+          price_per_unit: 170
 
     - name: 720
       price_per_unit: 100
