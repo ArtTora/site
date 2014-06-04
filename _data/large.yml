@@ -110,9 +110,9 @@
   - name: 360
     price_per_unit: 465
   - name: 720
-    price_per_unit: 630
+    price_per_unit: 645
   - name: 1440
-    price_per_unit: 660
+    price_per_unit: 690
 - name: Сетка Mash 270
   resolutions:
   - name: 360
