@@ -8,7 +8,7 @@
       - name: 300 гр/м
         copyCount:
         - - 100
-          - 147
+          - 150
         options:
         - name: Закругление углов
           prices:
