@@ -1,211 +1,141 @@
+---
 - name: Баннер
   resolutions:
-    - name: 360
-      price_per_unit: 90
-
-      options:
-        - name: Люверсы
-          price_per_unit: 15
-
-        - name: Пропайка
-          price_per_unit: 15
-
-        - name: Ламинирование
-          price_per_unit: 45
-
-    - name: 720
-      price_per_unit: 100
-
-      options:
-        - name: Люверсы
-          price_per_unit: 15
-
-        - name: Пропайка
-          price_per_unit: 15
-
-        - name: Ламинирование
-          price_per_unit: 45
-
-
-    - name: 1440
-      price_per_unit: 120
-
-      options:
-        - name: Люверсы
-          price_per_unit: 15
-          
-        - name: Пропайка
-          price_per_unit: 15
-          
-        - name: Ламинирование
-          price_per_unit: 45
-
-
+  - name: 360
+    price_per_unit: 300
+    options:
+    - name: Люверсы
+      price_per_unit: 51
+    - name: Пропайка
+      price_per_unit: 51
+    - name: Ламинирование
+      price_per_unit: 165
+  - name: 720
+    price_per_unit: 330
+    options:
+    - name: Люверсы
+      price_per_unit: 51
+    - name: Пропайка
+      price_per_unit: 51
+    - name: Ламинирование
+      price_per_unit: 165
+  - name: 1440
+    price_per_unit: 360
+    options:
+    - name: Люверсы
+      price_per_unit: 51
+    - name: Пропайка
+      price_per_unit: 51
+    - name: Ламинирование
+      price_per_unit: 165
 - name: Баннер экосольвентный
   resolutions:
-    - name: 1440
-      price_per_unit: 110
-
-      options:
-        - name: Люверсы
-          price_per_unit: 15
-          
-        - name: Пропайка
-          price_per_unit: 15
-          
-        - name: Ламинирование
-          price_per_unit: 45
-   
-          
+  - name: 1440
+    price_per_unit: 330
+    options:
+    - name: Люверсы
+      price_per_unit: 51
+    - name: Пропайка
+      price_per_unit: 51
+    - name: Ламинирование
+      price_per_unit: 165
 - name: Баннер ламинированный 440
   resolutions:
-
-    - name: 540
-      price_per_unit: 95
-      
-      options:
-        - name: Люверсы
-          price_per_unit: 15
-          
-        - name: Пропайка
-          price_per_unit: 15
-          
-    - name: 1080
-      price_per_unit: 105
-
-      options:
-        - name: Люверсы
-          price_per_unit: 15
-          
-        - name: Пропайка
-          price_per_unit: 15
-    
-        
-- name: Баннер двухсторонний 
+  - name: 540
+    price_per_unit: 260
+    options:
+    - name: Люверсы
+      price_per_unit: 51
+    - name: Пропайка
+      price_per_unit: 51
+  - name: 1080
+    price_per_unit: 323
+    options:
+    - name: Люверсы
+      price_per_unit: 51
+    - name: Пропайка
+      price_per_unit: 51
+- name: Баннер двухсторонний
   resolutions:
-
-    - name: 5х0,8м
-      price_per_unit: 750
-      
-      options:
-        - name: Люверсы
-          price_per_unit: 15
-          
-        - name: Пропайка
-          price_per_unit: 15          
-          
-- name: Блюбэк 115 
+  - name: 5х0,8м
+    price_per_unit: 2400
+    options:
+    - name: Люверсы
+      price_per_unit: 51
+    - name: Пропайка
+      price_per_unit: 51
+- name: Блюбэк 115
   resolutions:
-
-    - name: 360
-      price_per_unit: 40
-      
-          
-          
+  - name: 360
+    price_per_unit: 120
 - name: Оракал (пленка самоклейка белая)
   resolutions:
-    - name: 360
-      price_per_unit: 95
-
-      options:
-        - name: Ламинирование
-          price_per_unit: 45
-
-    - name: 720
-      price_per_unit: 110
-
-      options:
-        - name: Ламинирование
-          price_per_unit: 45
-
-
-    - name: 1440
-      price_per_unit: 140
-
-      options:
-        - name: Ламинирование
-          price_per_unit: 45
-          
+  - name: 360
+    price_per_unit: 300
+    options:
+    - name: Ламинирование
+      price_per_unit: 165
+  - name: 720
+    price_per_unit: 360
+    options:
+    - name: Ламинирование
+      price_per_unit: 165
+  - name: 1440
+    price_per_unit: 420
+    options:
+    - name: Ламинирование
+      price_per_unit: 165
 - name: Оракал (пленка самоклейка прозрачная)
   resolutions:
-    - name: 540
-      price_per_unit: 93
-
-      options:
-        - name: Ламинирование
-          price_per_unit: 45
-
-    - name: 1080
-      price_per_unit: 138
-
-      options:
- 
-        - name: Ламинирование
-          price_per_unit: 45
-
-
-
+  - name: 540
+    price_per_unit: 300
+    options:
+    - name: Ламинирование
+      price_per_unit: 165
+  - name: 1080
+    price_per_unit: 360
+    options:
+    - name: Ламинирование
+      price_per_unit: 165
 - name: Сити бумага 150
   resolutions:
-    - name: 360
-      price_per_unit: 60
-
-
-    - name: 720
-      price_per_unit: 85
-
-
-    - name: 1440
-      price_per_unit: 95
-
+  - name: 360
+    price_per_unit: 225
+  - name: 720
+    price_per_unit: 255
+  - name: 1440
+    price_per_unit: 285
 - name: One Way Vision
   resolutions:
-    - name: 360
-      price_per_unit: 155
-
-
-    - name: 720
-      price_per_unit: 210
-
-
-    - name: 1440
-      price_per_unit: 220
-
+  - name: 360
+    price_per_unit: 465
+  - name: 720
+    price_per_unit: 645
+  - name: 1440
+    price_per_unit: 690
 - name: Сетка Mash 270
   resolutions:
-    - name: 360
-      price_per_unit: 100
-
-
-    - name: 720
-      price_per_unit: 130
-
-
-    - name: 1440
-      price_per_unit: 145
-
-- name: Печать на флажной ткани
+  - name: 360
+    price_per_unit: 345
+  - name: 720
+    price_per_unit: 390
+  - name: 1440
+    price_per_unit: 435
+- name: Печать на флажной ткани (уличная)
   resolutions:
-
-    - name: 540
-      price_per_unit: 130
-
-- name: Глянцевая фотобумага 180 г/м
+  - name: 540
+    price_per_unit: 555
+  - name: 1080
+    price_per_unit: 1080    
+- name: Глянцевая фотобумага 180-230 г/м
   resolutions:
-
-    - name: 720
-      price_per_unit: 160    
-
+  - name: 1080
+    price_per_unit: 360
 - name: Матовая фотобумага 130 г/м
   resolutions:
-
-    - name: 720
-      price_per_unit: 80            
-
-
+  - name: 1080
+    price_per_unit: 240
 - name: Холст матовый
   resolutions:
-
-    - name: 720
-      price_per_unit: 250   
-      
+  - name: 1080
+    price_per_unit: 1050

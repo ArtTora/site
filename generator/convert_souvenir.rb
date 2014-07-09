@@ -1,6 +1,6 @@
 require 'yaml'
 
-categories = YAML.load_file('../_data/offset.yml')
+categories = YAML.load_file('../_data/souvenir.yml')
 
 categories.each do |c|
   c['formats'].each do |f|
@@ -12,4 +12,4 @@ categories.each do |c|
   end
 end
 
-File.write '../_data/offset.yml', categories.to_yaml
+File.write '../_data/souvenir.yml', categories.to_yaml
