@@ -34,7 +34,7 @@ clients:
 slides_in_header: true
 
 slides:
-  - image: images/slide4.jpg
+  - image: images/slide44.jpg
     description: картинка с насыщеным цветом
 
   - image: images/slide5.jpg
