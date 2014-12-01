@@ -1,4 +1,14 @@
 ---
+- name: Визитки ч/б
+  formats:
+  - name: 50x90
+    chromaticities:
+    - name: Односторонняя
+      paper_types:
+      - name: 300 гр/м
+        copyCount:
+        - - 100
+          - 160
 - name: Визитки
   formats:
   - name: 50x90
