@@ -142,7 +142,7 @@
     chromaticities:
     - name: Одосторонняя
       paper_types:
-      - name: атлас
+      - name: атлас\пластик
         copyCount:
         - - 1-3
           - 240
