@@ -123,10 +123,8 @@
     price_per_unit: 435
 - name: Печать на флажной ткани (уличная)
   resolutions:
-  - name: 540
-    price_per_unit: 555
   - name: 1080
-    price_per_unit: 1080    
+    price_per_unit: 555    
 - name: Глянцевая фотобумага 180-230 г/м
   resolutions:
   - name: 1080
