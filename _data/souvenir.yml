@@ -92,43 +92,34 @@
       - name: камень
         copyCount:
         - - 1-3
-          - 330
+          - 720
         - - 3-10
-          - 300
-  - name: 14х14
-    chromaticities:
-    - name: Одосторонняя
-      paper_types:
-      - name: камень
-        copyCount:
-        - - 1-3
-          - 270
-        - - 3-10
-          - 240
+          - 680
+  
 - name: Подушка
   formats:
-  - name: 30*30 розовая/зеленая
+  - name: 30*30 прямоугольная/сердце
     chromaticities:
     - name: Одосторонняя
       paper_types:
       - name: синтепон
         copyCount:
         - - 1-3
-          - 240
+          - 600
         - - 3-10
-          - 210
+          - 540
 - name: Футболка
   formats:
-  - name: Белая
+  - name: Белая XXS, XS, S, M, L, XL, XXL, XXXL, 4XL
     chromaticities:
-    - name: Одосторонняя
+    - name: Двухслойная
       paper_types:
       - name: хлопок+синтетика
         copyCount:
         - - 1-3
-          - 360
+          - 600
         - - 3-10
-          - 330
+          - 560
 - name: Тарелка
   formats:
   - name: золотая полоса/орнамент
@@ -138,9 +129,9 @@
       - name: керамика
         copyCount:
         - - 1-3
-          - 210
+          - 440
         - - 3-10
-          - 180
+          - 400
 - name: Наволочка
   formats:
   - name: 40*40
@@ -162,9 +153,9 @@
       - name: пластик
         copyCount:
         - - 1-3
-          - 36
+          - 80
         - - 3-10
-          - 30
+          - 60
 - name: Ручка
   formats:
   - name: шариковая (прокручивается)
