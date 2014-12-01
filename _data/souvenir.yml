@@ -78,7 +78,6 @@
         - - 3-10
           - 200
   - name: Мешок для пазла
-    chromaticities:
     copyCount:
         - - 1-3
           - 100
