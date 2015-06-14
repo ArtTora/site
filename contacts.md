@@ -4,7 +4,7 @@ title: Наши контакты
 description: Вы можете найти нас в городе-герои напротив ЗАГСа, возле Нахимовской администрации
 keywords: полиграфия и рекламное агенство на ул. Горького 2, 
 
-email: artmilada@mail.ru art_tora@mail.ru     
+email: artmilada@mail.ru    
 phones: [+7 978 764 18 82]
 address: г. Севастополь  ул. Горького, 2 <br> <small class="help">напротив ЗАГСа, возле Нахимовской администрации</small>
 ---
