@@ -152,7 +152,7 @@
   formats:
   - name: 3х4.5, 3.5х3.5, сердце 4х4
     chromaticities:
-    - name: Двухсторонняя
+    - name: Двухсторонний
       paper_types:
       - name: пластик
         copyCount:
